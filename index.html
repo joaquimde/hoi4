@@ -657,7 +657,7 @@ function setActiveButton(buttonId) {
 function openModal(modalNum) {
   const modal = document.querySelector(`#my-modal-${modalNum}`);
   modal.style.display = 'block';
-  document.body.style.overflow = 'hidden'; // body elementine overflow: hidden; stilini uyguluyoruz
+  document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
@@ -665,14 +665,14 @@ function closeModal() {
   modals.forEach(modal => {
     modal.style.display = 'none';
   });
-  document.body.style.overflow = 'auto'; // body elementinin overflow özelliğini tekrar otomatik olarak ayarlıyoruz
+  document.body.style.overflow = 'auto';
 }
 
 </script>
 	
 <h1 class="baslik">Point Blank Info</h1>
   <div class="ustbilgi">
-  <h1>Bu form, <a href="https://pb.tamgame.com/ranking/individual/list.do?ranktype=exp&keyword=Joaquim" target="_blank" class="rainbow">Joaquim</a> tarafından hazırlanmıştır.</h1>
+  <h1><a href="https://pb.tamgame.com/ranking/individual/list.do?ranktype=exp&keyword=Joaquim" target="_blank" class="rainbow">Joaquim</a> tarafından hazırlanmıştır.</h1>
   <h1 style="font-size: 30px;"><a href="https://www.instagram.com/pbjoaquim/" target="_blank"><i class="fab fa-instagram"></i></a></h1>
 </div>
 <div class="cizgi"></div>
@@ -1960,17 +1960,13 @@ function closeModal() {
 <div class="konteyner">
   <div class="cizgi"></div>
   <div class="icerik">
-    <div class="discord">
-      <br>
-      <h1 style="margin-right: -105px; margin-top: -5px;">Discord</h1>
-      <br>
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQT7CZumtyFzBy0amI6wQV_H8Tmgj_j9gP4XabuyKVSECxoQDX5GIlJCCj_PKpTTJmqTMz4O4WLYQZGid3pwwfBjtu97gEzSYAVldmjHC92nrTVOtnsEJrsqOu3Og0RUTEoQWADNs9tZjbYeRU4rBLoS2HdzHW-Em-0D6hqFjuac7gCwnoyGlgUqM6/s128/joaquim_icon_gri.png" style="margin-left: -20px;">
-      <p>@Joaquim</p>
+    <div class="oyunici">
+	<br><br>
+      <p style="color: grey;">Bu sitenin TAM Game ile bağlantısı yoktur.<br><font style="font-weight: bold;">Kasım 2020</font> tarihinde oluşturulmuştur.</p>
     </div>
     <div class="oyunici">
-      <h1 style="margin-top: 43px; margin-right: 10px;">Oyun İçi</h1>
-      <br>
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrqZzoVkD4cKEfwHb6Qagh94Tc2rDcc050st4CqKbFxXXvZOk1pp3CKsXtZgO8Cgq8i-rPDlQ55OxisarOqynytSRX2rLWf253kVys7mJ5lBuvHhsct9Bkw9e4PJj2DjpWiHbr1-7lN-1UPE0Gp9A_FdKzCBQmYWfL4AOpQGerqQjzXUQR7saPxtQL/s222/pb.png">
+      <h1 style="margin-top: 43px; margin-right: 10px;">PB Discord</h1>
+      <p style="color: white;">discord.gg/pointblanktam</p>
     </div>
   </div>
 </div>
