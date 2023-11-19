@@ -1,1972 +1,2009 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tr" lang="tr">
+
 <head>
-  <meta name="google-site-verification" content="mTxWiAc16E12TJMmrGDai1U-ekpcWOXseCeKdOr-VcE" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="google-site-verification" content="mTxWiAc16E12TJMmrGDai1U-ekpcWOXseCeKdOr-VcE">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Point Blank Info</title>
   <meta name="description" content="Point Blank Info">
   <meta name="keywords" content="point blank, point blank türk, zepetto">
   <meta property="og:title" content="Point Blank Info">
-  <meta property="og:description" content="Point Blank Info">
+  <meta property="og:description" content="Point Blank Hakkında Genel Bilgiler">
   <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigNsxJZG46_IuMfazEpM16skEy8GRbGqynqZDD8KbsBZd4mza1jvyz6dbxlNCGx9pxbnOqshdYtHKz0zBtpGz6jLN-3kZbrRywbCXENgTvoOS7A68CJYbsRtPqHYyVEekFumfa4t7IgHiDurzXAop1FLqEYtfzj-K3A7SuBc--oQrXKKy2OIgE3_aJ/s325/PointBlankLogo.png">
-  <link rel="shortcut icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJUXkYtTBj8GGm_3DPuo_BnxCY4_6j_XO9PWwqp-mdVPKxPHyQCofojcZjG62_NqxzE7R5cSoDIMqNhlIkwBsdbufgs3EhyvMawMwDQj_65QoYkpfasmY3WqVjN8-jz3xd3WoSkBhSFWqeTEJ7_zxZ4L8o6Fp6XDoQQprELzWvbRKAmCtCXxmSAKrH/s128/favicon_pb.png"/>
+  <link rel="shortcut icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJUXkYtTBj8GGm_3DPuo_BnxCY4_6j_XO9PWwqp-mdVPKxPHyQCofojcZjG62_NqxzE7R5cSoDIMqNhlIkwBsdbufgs3EhyvMawMwDQj_65QoYkpfasmY3WqVjN8-jz3xd3WoSkBhSFWqeTEJ7_zxZ4L8o6Fp6XDoQQprELzWvbRKAmCtCXxmSAKrH/s128/favicon_pb.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-body {
-  background: #242424;
-  font-family: 'Poppins', sans-serif;
-}
-
-.tamstorebutton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 450px;
-  height: 40px;
-  margin-left: 60px;
-  margin-top: 10px;
-  background-color: #f60;
-  border-radius: 5px;
-  text-decoration: none;
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  transition: background-color 0.2s;
-  cursor: pointer;
-}
-
-.tamstorebutton:hover {
-  background-color: #ec5f00;
-}
-
-.baslik {
-  text-align: left;
-  margin: 0px;
-  margin-top: 50px;
-  margin-left: 150px;
-  color: White;
-}
-
-.button-container {
-  display: flex; 
-  justify-content: center; 
-  margin-top: 10px;
-  margin-left: -15px;
-}
-
-.button-container button {
-  width: 150px;
-  height: 50px;
-  margin: 0 5px;
-  background-color: black;
-  color: darkgrey;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  opacity: 0.3;
-}
-
-.button-container button:hover {
-  opacity: 0.7;
-  color: white;
-}
-
-.button-container button.active {
-  background-color: white;
-  color: black;
-  opacity: 1;
-  box-shadow: 0px 0px 20px black;
-}
-
-.sonucyok::before {
-  content: "SONUÇ YOK";
-  display: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 9999;
-  font-size: 3em;
-  color: rgb(80, 80, 80);
-}
-
-.sonucyok.show::before {
-  display: block;
-  margin-top: 100px;
-}
-
-.searchB {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: -15px;
-}
-
-.searchBar {
-  align-items: center;
-  width: 30%;
-  height: 32px;
-  margin: 20px;
-  border-radius: 3px;
-  border: 3px solid #121212;
-  padding: 5px 10px;
-  font-size: 12px;
-  background: #121212;
-  text-align: center;
-  color: #fff;
-  margin-top: 50px;
-}
-
-.cards {
-  padding: 2rem; 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin: 0px;
-  margin-left: -50px;
-}
-
-.cards li {
-  list-style-type:none;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 100px;
-  width: 250px;
-  height: 400px;
-  background: #333333;
-  color: #848484;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,.3);
-  text-decoration: none;  
-  text-align: center;
-  font-size: 1rem;
-  overflow: hidden;
-  transition: transform 200ms, box-shadow 200ms;
-  margin: 6px;
-}
-	
-.card__gradient {
-  background: linear-gradient(to top, #000000, #8b0000);
-  border: 2px solid #8b0000;
-  animation: yanansonengolge 1.5s infinite;
-}
-
-@keyframes yanansonengolge {
-  0% {
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
-  }
-  50% {
-    box-shadow: none;
-  }
-  100% {
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
-  }
-}
-
-.card .card__image {
-  flex: 0 0 150px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.card .content {
-  padding: 1rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.card .card__title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2rem;
-  font-weight: 100;
-  color: white;
-  text-decoration: underline;
-  margin-bottom: 20px;
-}
-	
-	.card .rareitem {
-  position: relative;
-  text-align: center;
-  top: -10px;
-  color: white;
-  font-size: 10px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  text-shadow: 0px 0px 4px red,
-               0px 0px 4px red;
-}
-
-.card .card__info {
-  font-size: 15px;
-  color: white;
-  margin: 20px;
-  margin-top: -20px;
-}
-
-.card .card__snippet {
-  margin-bottom: 0px;
-  color: #999999;
-  font-size: 15px;
-  text-decoration:none;
-}
-
-.cardlong {
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 100px;
-  width: 250px;
-  height: 550px;
-  background: #333333;
-  color: #848484;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,.3);
-  text-decoration: none;  
-  text-align: center;
-  font-size: 1rem;
-  overflow: hidden;
-  transition: transform 200ms, box-shadow 200ms;
-  margin: 6px;
-}
-
-.cardlong .card_image {
-  flex: 0 0 150px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.cardlong .content {
-  padding: 1rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.cardlong .card_title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2rem;
-  font-weight: 100;
-  color: white;
-  text-decoration: underline;
-  margin-bottom: 20px;
-}
-
-.cardlong .card_info {
-  font-size: 15px;
-  color: white;
-  margin: 20px;
-  margin-top: 0px;
-}
-
-.cardlong .card_snippet {
-  margin-bottom: 0px;
-  color: #999999;
-  font-size: 15px;
-  text-decoration:none;
-}
-
-.konteyner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.cizgi {
-  width: 80%;
-  height: 1px;
-  background-color: #555555;
-  margin-top: 50px;
-  margin-bottom: -20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.icerik {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-   margin-bottom: 50px;
-  width: 80%;
-}
-
-.discord {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.discord h1 {
-  margin: 5px;
-  color: darkgrey;
-}
-
-.discord p {
-  color: white;
-  font-size: 20px; 
-  margin: 0px; 
-  margin-top: -43px; 
-  margin-right: -170px;
-}
-
-.discord img {
-  margin-top: -13px;
-  width:50%;
-  height:50%;
-  border-radius: 50%;
-}
-
-.oyunici {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.oyunici h1 {
-  margin: 0;
-  color: darkgrey;
-}
-
-.ustbilgi {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 150px;
-  margin-top: 0px;
-  margin-bottom: 5px;
-  font-size: 10px;
-}
-
-.ustbilgi h1 {
-  margin: 0;
-  color: white;
-  font-weight: 500;
-}
-
-.ustbilgi a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.ustbilgi a:hover {
-  color: #999999;
-}
-
-.rainbow {
-  animation-name: colorChange;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes colorChange {
-  0% { color: blue; }
-  25% { color: green; }
-  50% { color: yellow; }
-  75% { color: orange; }
-  100% { color: red; }
-}
-	
-.ortala {
-  color: white;
-  text-align: center;
-}
-
-.ortala * {
-
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-  margin: 10% auto;
-  width: 90%;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-  animation-name: modalopen;
-  animation-duration: var(--modal-duration);
-  overflow: hidden;
-}
-
-.modal-header h2,
-.modal-footer h3 {
-  margin: 0;
-}
-
-.modal-header {
-  background: var(--modal-color);
-  padding: 15px;
-  color: #fff;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.modal-body {
-  background: rgb(26, 25, 25);
-}
-
-.rare-weapon-info {
-  position: absolute;
-  margin-left: 50px;
-  margin-top: 20px;
-  color: #fff;
-  text-align: left;
-  font-size: 50px;
-  font-weight: bold;
-  text-shadow: 0px 0px 10px red, 0px 0px 30px red;
-}
-
-.rare-weapon-info::before {
-  content: "";
-  position: absolute;
-  left: -20px; 
-  top: 0;
-  height: 100%;
-  width: 5px; 
-  background-color: #ff2400;
-}
-
-.close {
-  color: #fff;
-  float: right;
-  margin-right: 30px;
-  margin-top: 30px;
-  font-size: 30px;
-}
-
-.close:hover,
-.close:focus {
-  color: #999999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-@keyframes modalopen {
-  from {
-  opacity: 0;
-  }
-  to {
-  opacity: 1;
-  }
-}
-
-.skillbar {
-    width: 450px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-	margin-left: 110px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-.skillbar .flex {
-    display: flex;
-    margin: -5px;
-    font-size: 11px;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 82px;
-}
-
-.skillbar .flex h2 {
-  margin-top: 9px;
-	margin-left: -25px;
-	text-align: right;
-}
-
-.skillbar .bar {
-    position: absolute;
-    width: 250px;
-    height: 10px;
-    border: 1px solid white;
-    margin: 0 100px;
-    display: flex;
-    align-items: center;
-}
-
-.popupkont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.image-div {
-  margin-right: 20px;
-}
-
-.text-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 100px;
-}
-
-.text-div h2 {
-  margin-bottom: 10px; 
-}
-
-.subtext {
-  margin-top: 0px;
-}
-
-.subdata {
-  margin-bottom: 10px;
-}
-
-.text-div h2,
-.text-div p {
-  text-align: center;
-}
-
-.fitya-info {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: center;
-			margin-top: 50px;
-			margin-bottom: 10px;
-			width: 100%;
-}
-
-.fitya-box {
-			width: 20%;
-			height: 50px;
-			background: #121212;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-      margin: 5px;	
-}
-
-.fitya-box:last-child {
-			margin-right: 0;
-}
-
-.fitya-box p {
-			margin: 0;
-			text-align: center;
-}
-
-.fitya-box span {
-			font-weight: bold;
-			font-size: 15px;
-			margin-top: 5px;
-}
-</style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    body {
+      background: #242424;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .tamstorebutton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 450px;
+      height: 40px;
+      margin-left: 60px;
+      margin-top: 10px;
+      background-color: #f60;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      transition: background-color 0.2s;
+      cursor: pointer;
+    }
+
+    .tamstorebutton:hover {
+      background-color: #ec5f00;
+    }
+
+    .baslik {
+      text-align: left;
+      margin: 0px;
+      margin-top: 50px;
+      margin-left: 150px;
+      color: White;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      margin-left: -15px;
+    }
+
+    .button-container button {
+      width: 150px;
+      height: 50px;
+      margin: 0 5px;
+      background-color: black;
+      color: darkgrey;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      opacity: 0.3;
+    }
+
+    .button-container button:hover {
+      opacity: 0.7;
+      color: white;
+    }
+
+    .button-container button.active {
+      background-color: white;
+      color: black;
+      opacity: 1;
+      box-shadow: 0px 0px 20px black;
+    }
+
+    .sonucyok::before {
+      content: "SONUÇ YOK";
+      display: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+      font-size: 3em;
+      color: rgb(80, 80, 80);
+    }
+
+    .sonucyok.show::before {
+      display: block;
+      margin-top: 100px;
+    }
+
+    .searchB {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: -15px;
+    }
+
+    .searchBar {
+      align-items: center;
+      width: 30%;
+      height: 32px;
+      margin: 20px;
+      border-radius: 3px;
+      border: 3px solid #121212;
+      padding: 5px 10px;
+      font-size: 12px;
+      background: #121212;
+      text-align: center;
+      color: #fff;
+      margin-top: 50px;
+    }
+
+    .cards {
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin: 0px;
+      margin-left: -50px;
+    }
+
+    .cards li {
+      list-style-type: none;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 100px;
+      width: 250px;
+      height: 400px;
+      background: #333333;
+      color: #848484;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+      text-decoration: none;
+      text-align: center;
+      font-size: 1rem;
+      overflow: hidden;
+      transition: transform 200ms, box-shadow 200ms;
+      margin: 6px;
+    }
+
+    .card__gradient {
+      background: linear-gradient(to top, #000000, #8b0000);
+      border: 2px solid #8b0000;
+      animation: yanansonengolge 1.5s infinite;
+    }
+
+    @keyframes yanansonengolge {
+      0% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+      }
+
+      50% {
+        box-shadow: none;
+      }
+
+      100% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+      }
+    }
+
+    .card .card__image {
+      flex: 0 0 150px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card .content {
+      padding: 1rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card .card__title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      font-weight: 100;
+      color: white;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    .card .rareitem {
+      position: relative;
+      text-align: center;
+      top: -10px;
+      color: white;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-shadow: 0px 0px 4px red,
+        0px 0px 4px red;
+    }
+
+    .card .card__info {
+      font-size: 15px;
+      color: white;
+      margin: 20px;
+      margin-top: -20px;
+    }
+
+    .card .card__snippet {
+      margin-bottom: 0px;
+      color: #999999;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    .cardlong {
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 100px;
+      width: 250px;
+      height: 550px;
+      background: #333333;
+      color: #848484;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+      text-decoration: none;
+      text-align: center;
+      font-size: 1rem;
+      overflow: hidden;
+      transition: transform 200ms, box-shadow 200ms;
+      margin: 6px;
+    }
+
+    .cardlong .card_image {
+      flex: 0 0 150px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .cardlong .content {
+      padding: 1rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cardlong .card_title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      font-weight: 100;
+      color: white;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    .cardlong .card_info {
+      font-size: 15px;
+      color: white;
+      margin: 20px;
+      margin-top: 0px;
+    }
+
+    .cardlong .card_snippet {
+      margin-bottom: 0px;
+      color: #999999;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    .konteyner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cizgi {
+      width: 80%;
+      height: 1px;
+      background-color: #555555;
+      margin-top: 50px;
+      margin-bottom: -20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .icerik {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+      width: 80%;
+    }
+
+    .discord {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .discord h1 {
+      margin: 5px;
+      color: darkgrey;
+    }
+
+    .discord p {
+      color: white;
+      font-size: 20px;
+      margin: 0px;
+      margin-top: -43px;
+      margin-right: -170px;
+    }
+
+    .discord img {
+      margin-top: -13px;
+      width: 50%;
+      height: 50%;
+      border-radius: 50%;
+    }
+
+    .oyunici {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .oyunici h1 {
+      margin: 0;
+      color: darkgrey;
+    }
+
+    .ustbilgi {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 150px;
+      margin-top: 0px;
+      margin-bottom: 5px;
+      font-size: 10px;
+    }
+
+    .ustbilgi h1 {
+      margin: 0;
+      color: white;
+      font-weight: 500;
+    }
+
+    .ustbilgi a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .ustbilgi a:hover {
+      color: #999999;
+    }
+
+    .rainbow {
+      animation-name: colorChange;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes colorChange {
+      0% {
+        color: blue;
+      }
+
+      25% {
+        color: green;
+      }
+
+      50% {
+        color: yellow;
+      }
+
+      75% {
+        color: orange;
+      }
+
+      100% {
+        color: red;
+      }
+    }
+
+    .ortala {
+      color: white;
+      text-align: center;
+    }
+
+    .ortala * {}
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      margin: 10% auto;
+      width: 90%;
+      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+      animation-name: modalopen;
+      animation-duration: var(--modal-duration);
+      overflow: hidden;
+    }
+
+    .modal-header h2,
+    .modal-footer h3 {
+      margin: 0;
+    }
+
+    .modal-header {
+      background: var(--modal-color);
+      padding: 15px;
+      color: #fff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .modal-body {
+      background: rgb(26, 25, 25);
+    }
+
+    .rare-weapon-info {
+      position: absolute;
+      margin-left: 50px;
+      margin-top: 20px;
+      color: #fff;
+      text-align: left;
+      font-size: 50px;
+      font-weight: bold;
+      text-shadow: 0px 0px 10px red, 0px 0px 30px red;
+    }
+
+    .rare-weapon-info::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 0;
+      height: 100%;
+      width: 5px;
+      background-color: #ff2400;
+    }
+
+    .close {
+      color: #fff;
+      float: right;
+      margin-right: 30px;
+      margin-top: 30px;
+      font-size: 30px;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #999999;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    @keyframes modalopen {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .skillbar {
+      width: 450px;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 110px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .skillbar .flex {
+      display: flex;
+      margin: -5px;
+      font-size: 11px;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 82px;
+    }
+
+    .skillbar .flex h2 {
+      margin-top: 9px;
+      margin-left: -25px;
+      text-align: right;
+    }
+
+    .skillbar .bar {
+      position: absolute;
+      width: 250px;
+      height: 10px;
+      border: 1px solid white;
+      margin: 0 100px;
+      display: flex;
+      align-items: center;
+    }
+
+    .popupkont {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .image-div {
+      margin-right: 20px;
+    }
+
+    .text-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 100px;
+    }
+
+    .text-div h2 {
+      margin-bottom: 10px;
+    }
+
+    .subtext {
+      margin-top: 0px;
+    }
+
+    .subdata {
+      margin-bottom: 10px;
+    }
+
+    .text-div h2,
+    .text-div p {
+      text-align: center;
+    }
+
+    .fitya-info {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .fitya-box {
+      width: 20%;
+      height: 50px;
+      background: #121212;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 5px;
+    }
+
+    .fitya-box:last-child {
+      margin-right: 0;
+    }
+
+    .fitya-box p {
+      margin: 0;
+      text-align: center;
+    }
+
+    .fitya-box span {
+      font-weight: bold;
+      font-size: 15px;
+      margin-top: 5px;
+    }
+  </style>
 </head>
-  
+
 <body>
-<script>
-function showCard(kartId, buttonId) {
-  const kart1 = document.getElementById("kart1");
-  const kart2 = document.getElementById("kart2");
-  const kart3 = document.getElementById("kart3");
-  const button1 = document.getElementById("button1");
-  const button2 = document.getElementById("button2");
-  const button3 = document.getElementById("button3");
+  <script>
+    function showCard(kartId, buttonId) {
+      const kart1 = document.getElementById("kart1");
+      const kart2 = document.getElementById("kart2");
+      const kart3 = document.getElementById("kart3");
+      const button1 = document.getElementById("button1");
+      const button2 = document.getElementById("button2");
+      const button3 = document.getElementById("button3");
+      kart1.style.display = "none";
+      kart2.style.display = "none";
+      kart3.style.display = "none";
+      const kart = document.getElementById(kartId);
+      kart.style.display = "block";
+      setActiveButton(buttonId);
+    }
 
-  kart1.style.display = "none";
-  kart2.style.display = "none";
-  kart3.style.display = "none";
-
-  const kart = document.getElementById(kartId);
-  kart.style.display = "block";
-
-  setActiveButton(buttonId);
-}
-
-function setActiveButton(buttonId) {
-  const button1 = document.getElementById("button1");
-  const button2 = document.getElementById("button2");
-  const button3 = document.getElementById("button3");
-
-  button1.classList.toggle("active", buttonId === "button1");
-  button2.classList.toggle("active", buttonId === "button2");
-  button3.classList.toggle("active", buttonId === "button3");
-}
-</script>
-<script>
-	
-	function arama() {
-  var input, filter, kart1, kart2, kart3, li, a, i;
-  input = document.getElementById('ara');
-  filter = input.value.toUpperCase();
-  kart1 = document.getElementById("kart1");
-  kart2 = document.getElementById("kart2");
-  kart3 = document.getElementById("kart3");
-  li = kart1.getElementsByTagName('li');
-  li2 = kart2.getElementsByTagName('li');
-  li3 = kart3.getElementsByTagName('li');
-  var sonuc = 0;
-  for (i = 0; i < li.length; i++) {
-      a = li[i].getElementsByTagName("a")[0];
-      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+    function setActiveButton(buttonId) {
+      const button1 = document.getElementById("button1");
+      const button2 = document.getElementById("button2");
+      const button3 = document.getElementById("button3");
+      button1.classList.toggle("active", buttonId === "button1");
+      button2.classList.toggle("active", buttonId === "button2");
+      button3.classList.toggle("active", buttonId === "button3");
+    }
+  </script>
+  <script>
+    function arama() {
+      var input, filter, kart1, kart2, kart3, li, a, i;
+      input = document.getElementById('ara');
+      filter = input.value.toUpperCase();
+      kart1 = document.getElementById("kart1");
+      kart2 = document.getElementById("kart2");
+      kart3 = document.getElementById("kart3");
+      li = kart1.getElementsByTagName('li');
+      li2 = kart2.getElementsByTagName('li');
+      li3 = kart3.getElementsByTagName('li');
+      var sonuc = 0;
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
           li[i].style.display = "";
           sonuc++;
-      } else {
+        } else {
           li[i].style.display = "none";
-      } 
-  }
-  for (i = 0; i < li2.length; i++) {
-      a = li2[i].getElementsByTagName("a")[0];
-      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        }
+      }
+      for (i = 0; i < li2.length; i++) {
+        a = li2[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
           li2[i].style.display = "";
           sonuc++;
-      } else {
+        } else {
           li2[i].style.display = "none";
-      } 
-  }
-  for (i = 0; i < li3.length; i++) {
-      a = li3[i].getElementsByTagName("a")[0];
-      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        }
+      }
+      for (i = 0; i < li3.length; i++) {
+        a = li3[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
           li3[i].style.display = "";
           sonuc++;
-      } else {
+        } else {
           li3[i].style.display = "none";
-      } 
-  }
+        }
+      }
+      var SonucYok = document.querySelector('.sonucyok');
+      if (sonuc === 0) {
+        SonucYok.classList.add("show");
+      } else {
+        SonucYok.classList.remove("show");
+      }
+    }
+  </script>
+  <script>
+    function openModal(modalNum) {
+      const modal = document.querySelector(`#my-modal-${modalNum}`);
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
 
-  var SonucYok = document.querySelector('.sonucyok');
-  if (sonuc === 0) {
-    SonucYok.classList.add("show");
-  } else {
-    SonucYok.classList.remove("show");
-  }
-}
-</script>
-<script>
-function openModal(modalNum) {
-  const modal = document.querySelector(`#my-modal-${modalNum}`);
-  modal.style.display = 'block';
-  document.body.style.overflow = 'hidden';
-}
+    function closeModal() {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+        modal.style.display = 'none';
+      });
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+  <script>
+    window.onload = function() {
+      var cards = Array.from(document.querySelectorAll('li[style="list-style-type:none;"]'));
+      cards.sort(function(a, b) {
+        var titleA = a.querySelector('.card__title').innerText;
+        var titleB = b.querySelector('.card__title').innerText;
+        var rareItemA = a.querySelector('.rareitem');
+        var rareItemB = b.querySelector('.rareitem');
+        if (rareItemA && !rareItemB) return -1;
+        if (!rareItemA && rareItemB) return 1;
+        return titleA.localeCompare(titleB);
+      });
+      var parent = document.querySelector('section.cards');
+      cards.forEach(function(card) {
+        parent.appendChild(card);
+      });
+    };
+  </script>
 
-function closeModal() {
-  const modals = document.querySelectorAll('.modal');
-  modals.forEach(modal => {
-    modal.style.display = 'none';
-  });
-  document.body.style.overflow = 'auto';
-}
-
-</script>
-	
-<h1 class="baslik">Point Blank Info</h1>
+  <h1 class="baslik">Point Blank Info</h1>
   <div class="ustbilgi">
-  <h1><a href="https://pb.tamgame.com/ranking/individual/list.do?ranktype=exp&keyword=Joaquim" target="_blank" class="rainbow">Joaquim</a> tarafından hazırlanmıştır.</h1>
-  <h1 style="font-size: 30px;"><a href="https://www.instagram.com/pbjoaquim/" target="_blank"><i class="fab fa-instagram"></i></a></h1>
-</div>
-<div class="cizgi"></div>
-<div class="searchB">
-<input type="text" id="ara" class="searchBar" onkeyup="arama()" placeholder="Ara...">
-</div>
-<div class="sonucyok"></div>
-<div class="button-container">
-<button id="button1" class="active" onclick="showCard('kart1', 'button1')">Maske/Kask/Bere</button>
-<button id="button2" onclick="showCard('kart2', 'button2')">Kasa/Set</button>
-<button id="button3" onclick="showCard('kart3', 'button3')">Silahlar</button>
-</div>
-
-<!--- KART1 --->
-
-<ul id="kart1">
-<section class="cards">
- <li style="list-style-type:none;">
-   <a class="card card__gradient">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMprUyYhQrl4N-4o4fmCbbmB9kHpZScVxkBVOoFn_UE5YkOTPFrFSITtyYLrc1O7mixAqRRMa5QAToLlThOAUB4Imzu3js_Q4A_joxWKY798xD5liIEKKJP-EgTnpsc8tjJKosGjrN2nHSX_oS6G65OR0sKEzhC0CWA0PHNUQYgVCuDqnyogp2L5-a/s442/kurukafa.png')"></div>
-    <div class="content">
-      <div class="card__title">Kuru Kafa Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div>
-    </div>
-	   <div class="rareitem">POPÜLER</div>
-   </a>
- </li>
-	<li style="list-style-type:none;">
-   <a class="card card__gradient">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRiNmHgOVFSnU0Hck7dOqmpZf2v_4qlFx23H48nfQ8qo9U0pzeQtqzISLyQhPjRN3Vg6rIoAEpodtM9-L6V3MAN1pCuC8PfF6ySb-C4YYl9usCfEZ1DE1L0_3PHC95oVeTwnIzQp2Ki4Ug7shX2kD24UOz1Tv7GgjtOv-WvNc5fHzIqRxgkn8unmKm/s442/mavi_uzayli.png')"></div>
-    <div class="content">
-      <div class="card__title">Mavi Uzaylı Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Delme Gücü ↑ <br> İsabet ↑</div> 
-    </div>
-	   <div class="rareitem">POPÜLER</div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card card__gradient">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFSkw8LZrwM181BqrPTDmWW5cP0OOrRh7JcnMPL7pOpAZia5iGvmUhCSGq-o5C9BOkkQZIK9t71MJGy2-xseJ0v0oNPNxNlMFhcnknXx0aIT1B4U_lpRzsOPngXC4B7_uAkeM6iG8Fo3jlnXyvqEgLs7CzSCZEabmPW4UCp5GtlQSkiMEh1hYYwi79/s442/kirmizi_uzayli.png')"></div>
-    <div class="content">
-      <div class="card__title">Kırmızı Uzaylı Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Delme Gücü ↑ <br> İsabet ↑</div> 
-    </div>
-	   <div class="rareitem">POPÜLER</div>
-   </a>
- </li>
- <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY3ZFwh_cR4xLDkAH_c-1ALXbIGLMrjgIU2XGauO8E5giWJJgA8EsZBAHEHvj0so2XHJ7UIc2ie9aIgYgdy0uliGzncIjclwKDYa-yoHURmEgq5qU77Fju866ayI4v7kK_1L1Iv2wcW1qpFgTT4ou-d77RdU3tehlCbGdJTmWxTJweCMSBKg4GGXQh/s442/PiratesRed.png')"></div>
-    <div class="content">
-      <div class="card__title">Kırmızı Korsan Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Hasar ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNSpaq49Cs6SABxel9Nr0WoZfgPwPQ_xQlOycJzNDytj2vTbsqaTVAvBqSs7Q3r4gN-bCl9Svxpb0o91DxrsydCxUbTbCrMXDkuiAmGVL1C5Z-lyx3ZmXvBGQHveBZmUsxqJPsvSU7ycqHpyHYO5VQIq3lOka0aUBWq9L_xII_agZ0fNozm0h2buwX/s442/PiratesBlue.png')"></div>
-    <div class="content">
-      <div class="card__title">Mavi Korsan Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Hasar ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil39KAeuEGreRHIl2yAkbbnP91ESsVQDMWHYQBudNoLn26fyBfLJo28FgbhrUgVEk-dPs2KaD_Io1_aS4XNuNL5qX_PAXfFC2UCnuII_nTcA30lpikVOJqgueVkTUudseTl8yqp_61ptgmRDUq_Xdp4FTpsJJZdPfM00e5z8vO_6f9O9k7TomemGmU/s442/aze.png')"></div>
-    <div class="content">
-      <div class="card__title">AZE Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Kontrol ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9INj6J9C_LfC9-tja_voIvTNOotW4F-HEN_0Gzgvj3Mws1hOs5sIoXKh6gSReTIZLkrlOfEB8GQlETQF-mkAMM-tdbwqExYYXQTWumnMJzfDJkdZnMvnYaErsJBYtap0DXlOVHGDac4Ltwo-yveLyXFop5kjHqxCQ1x3Wp44QNc8AqW81kgz75Zi3/s442/dino.png')"></div>
-    <div class="content">
-      <div class="card__title">Dino Kafatası Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> İsabet ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUxH0U-SgNgabr3FTd4oL9t6TqZtwbGlYFvWP1gCCQ67MSs1-GBduM95WZwN7M3DA_vK78ZJ7b1eGxJRudOChbR0BGHy08iTZHVIAC6NlNG1sqT5eaD46WHEdPJEXd5pPLWoW95_JX5FNmJeEZrNv5aKqiG2q6N0sSN6F4fdoQQSaUecFtLQ-RkcDN/s442/graffiti.png')"></div>
-    <div class="content">
-      <div class="card__title">Graffiti Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> İsabet ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBKL2QoOBeA650EYCIsgINk1JOHmxQGDlVoU8xLLbUOJHbX2SRH-YAgoBVzlfkxCjfN9UwBm-fpGrYoO4-GcXgNd29o1Hfml2KmNFw8ZoRxwT47w_wOYtH7GFNXHv6Uf9Q8pQdJ3f2GLzCdF3mkyi0D5SXaWD00EvVH9plji2OA3QckNjXJwOmi2aQ/s201/Screenshot_6.png')"></div>
-    <div class="content">
-      <div class="card__title">Hungul2019 Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-JHXYneXxVXfX4o5WNh_Q44adpEYu0xtBwsoiw4fZ0jwozhD_MriPaVSW1c8x92acnOIOuxMW6_CC6qnvPA6BoZrKrkAsFrHqooS3XlgRPQ1Vu8YAvubu_iK8j8B2VVbL9pEg5m9cYa0uMX9sr6MNOnRzrRGTI5hJInAw_gc2h5TjEgpImeFqkKZK/s442/jason.png')"></div>
-    <div class="content">
-      <div class="card__title">Jason Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> İsabet ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdf28sKPeawPE_UGBCaJOLhK2ZaqTTesa8mSfADSjzn8L-Qmh7VxbaCy6QGmOgK01xIAYOGPM-aFp2x2emBonj6tcQKyV4hBBbxnIEF-y9vRd6SYz2S27KoOC-YrpaDYCgg7Qbws8CIgJ81HJFtp9gYUi-l8a4HJmgqfq04dZe_snzf-NsLcC7rMYl/s204/Screenshot_8.png')"></div>
-    <div class="content">
-      <div class="card__title">Mor Ötesi Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAHI_Ag43w0kMZnb5BN-NfugYva-3ipemiC6yNta8lC38mqjV43W4ASTlpDKnrdnXFxcCAk6KBNyZ_0hN9076x7maxTfCAIR_d02--tPEP1Zdk1Ge_pmnR188uVDB_a_9c66T-i2WjQH_W_i5vuATKVkjA7ppdkfnz4uXSI8_cuxfL9whO0OTM1gzt/s201/Screenshot_9.png')"></div>
-    <div class="content">
-      <div class="card__title">Naga Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLhcKKdxM1UvPTY07vO_Ms0aJombV3XD5ZjDcGj6s85ykh31bgg908X6iL9xen4FsIzwpXGmBRtKXA1cBXtp0tuRDbmtg7FH5UUtpXO1J7ozatxUfBlUjRbC7fmrAYKC3LSQnuvepG242EgH8gDEUvMga26FZ5t_3iimaTnXDqj43oauf5uy7wod4Q/s202/Screenshot_10.png')"></div>
-    <div class="content">
-      <div class="card__title">Nitelikli Black Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8AwwCSc1IAUauKpbxlkjXET30iWaG6H_G9uyfsztHWsZBGr72dudErg6JVhI2bTS6_JRU_DQZZ85NIEtIgVZwSxxKSgKIU1ne_GoO9lJ6tRjf0nr9zK_RWJ-_L0-MDNYg_mNLsib_7l3vChgIYJED41T_Y1exyqHVXWL2ZQl-saPSYuCVyn4Elk1j/s203/Screenshot_11.png')"></div>
-    <div class="content">
-      <div class="card__title">Nova Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDKRRPX-Qdl4h_-PoYpEc_C1NerttRACwJX8x8cQUNx-JlZ8GNgbCc_pscgPURI4j-odTCHqkUivurTW98JPCiAsMo1Ev1GmxUuZyaHZ8tzL8BUK2xV-W0ei6dOKygHhEfPXYp8QCOmezz76-U7b95opXJOjY5vJVKS_nl9YJctM5J4RwvU8KVPhkB/s442/pastel_mistik.png')"></div>
-    <div class="content">
-      <div class="card__title">Pastel Mistik Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirHKTC8hzdyQrwIo7WDcNHowFf5VvVbCRXVHzYNZNjAR3o9NOP-zPz2JiydrnR0z23dAKLtvK2z89zMRYtV6vGCLoIaAT9fwy_UMU4YiZ_Hni84DCpG4rS86oYZSASol5m4--MIexHUyNFDHGaeSmQ5uDrGU328fRP1E74VbVUZTFOb9I08VoWFcF8/s442/Screenshot_13.png')"></div>
-    <div class="content">
-      <div class="card__title">PBST-ES Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdJDjIfJiVoPHsqpG7hX8LNzgOPu0GubDmfV8AOUXJpEkjmnsM7sBRQ5hqTYOMay5S321694ccUmhAOCjCQSOndlNzF7qrpVKf0FZFYScI5y1f1cOTydX6PRHBv6-G3UGC2QABgcxN-E6HyWxMI0DJJEf7LRfv0BJWgzKkyPBee-od3OgM3EEiBXRb/s442/siyah_kafatasi.png')"></div>
-    <div class="content">
-      <div class="card__title">Siyah Kafatası Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Kontrol ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhorNuXYS4c6m3CqzZM2FNNJekoxi1F0BO0iuEms__0yKpSN_sOtS-Cr1-XLLs7gPNp_Y-XbAOb7HFbIK3YBhCHH9rp72hdkhqD4ERbea6V3vFstSkXY3edQDhdpELsm0HwmHvMvjBPAX061P0K3IQFDtpiogVyu9WRkfNSiK1hXi0zDYmAL8c9xm8B/s442/deri.png')"></div>
-    <div class="content">
-      <div class="card__title">Deri Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Delme Gücü ↑ <br> İsabet ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhogfdudu6kMClTrZBVx2FsHVBp9jdWvLyza93NIEily_MJ57m7KwoT8QjuE_w26m73KayDfe2IbsErYvra4vzMG0TWq_-YCSusczyxmmkHawpfhE7Kz-XuoQAvG4twqtAo7FzQEAkFHDg7tXGXbHJb9TeLAS3bGP7myDHbjYcN-nDhMbCk8YPtHR49/s442/kirmizi_seytan.png')"></div>
-    <div class="content">
-      <div class="card__title">Kırmızı Şeytan Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Delme Gücü ↑ <br> Kontrol ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU7UwUDJPPHxkySCMVlqusB_A0GQBXcdbRkpVRU5SHP3EBdU5S8MEgEJ3q-eGzGG6W2CyeJzHvnEleGxNhWZ7npEXLuKsctmPSnClEVS-qhg7Jj6_ZfCr16N5Ff0SMsN_uQLv-6d5RrscnSmC3GMLXUnUZTRKnEhwZua598k8ntkiqQVi7cmVGgkzY/s442/kaplan.png')"></div>
-    <div class="content">
-      <div class="card__title">Kaplan Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Delme Gücü ↑ <br> Kontrol ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5lDcodrZNY2CJoBra59CLOT7R-Ug7tBH-VtddJn4tEvr6PMRNScCaGs67510VQDIGpwXHmhKNkAM84WKXn3Dp0et-3IVhMD25GRiI6DlQpKT6Io6ua8L8Ulu4Divp5-zXWJjNW7wyyv45vK8j6E_n2eC-E1sTrSKP7ozsyz4I1EmjUIQATnbOTy7H/s442/obsidian.png')"></div>
-    <div class="content">
-      <div class="card__title">Obsidyen Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvS7qSa4UpjdD0_QMPnxhTn4NwGCjTxOu5-0psQ7l8hAZv9OmiAbFYBV3OSwhphAQvcQgmWeX_uufmsLEeS8mbPS4NI1FMa7VjstqTVXbqgeiQ5bgVmwxnHuV6vM91UIfUIKmmoQuhqxA_IOjMjE1uDhFy6AA-0CVWAhQQV2B487mwDrnl6Obpy87Z/s442/gls.png')"></div>
-    <div class="content">
-      <div class="card__title">GLS Maskesi</div>
-      <div class="card__snippet">Kask Koruması :<font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnsscz0-DRfqpWh4rqNPNPaSJGQWgyXgBXZ8ffuk1jXizRhs0mfkWAaOy3kvVIKf-pAqCqbGTD0-UOlYaT9jrGYHe4ACDmsl-ssnxbdnfZP2qF4tICkgTOZ1v9TfIJLf0umi8ZK60V5Xf0L0FgJak8ELNdQ0cSHjZBe-IV3RX2Q_nXWTOazVJxHI54/s442/hero.png')"></div>
-    <div class="content">
-      <div class="card__title">Hero Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4aEc-ng8H50lkuoR6NjL1psmTXJt1lCPc2l9NqMTk5kUXAngqm3X-FRGne7rxHokNnBNjXzpE4XI1CImUnk4oi5DHRIRSd8WNR70-2tcz_g91MO_K0IHSyDH3gQ-mB0YDyszRf8X21laMVk1QRp0SRI3GoHk2D57Viu9RqLespUFiV80xiop_kfiT/s442/noel_baba_sapkasi.png')"></div>
-    <div class="content">
-      <div class="card__title">Noel Baba Şapkası</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font></div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjc6UuFP1SrlkvwUe3LlFYJIn9Ub1mkOBTUYGXEtHZ87zgKFixsrftE9J6k6RLpAeC6lFnySRoEq6QpNg_EglegQX70PVFZBwNazHEbASeLwCXrcvRDQ2nJIYHUJHJv0DoCec4wrUe2Q-GozFWgNCDzUFNhHdk88IPdtkw0XkQxhyRNALpjkHUhR2td/s442/fes_sapkasi.png')"></div>
-    <div class="content">
-      <div class="card__title">Fes</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> İsabet ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEju_kcBsBVmGGi1Tmwz_VzVFaghOAwreZk1e4qjXdDNe-RI5i0QJ2AcjtMjcwsqsGqaGK43juHPNbgE2-sRoavKGGGjwzF4OmoVOU0rW20pShc3P9ZUb4SlWCEP3HPML_DFqMf_XJTMl0kc7OH8leeWfkyvKFLQwSiDvZO33UaU2uAoVbAPJTxAYrvf/s442/guleryuz_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Güleryüz Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Kontrol ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdRQs6oql6c2Ld5vPlgar16Uk1fonZwBuaP-dtPpgZBAlcGT4DT7D8TOgglbNeMytq4bAsHXh90CYbRY_FOXrN8iJZj0HzfwvX_5T9eUIC6kLXT_yRRwLbpXRvXXtd_AdVQ7LwRNEJVVWBBs0MliIgNob62QYpfvip4QZn92T0WGu8rsYLPcFZ7W7X/s442/midnight_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Midnight Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Kontrol ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiT5oZACjL3esRm4muehdvI-M2SDr-nU9vxchbzHcEf-se4MwrPrgxXiTwA5bjsON_0WMeWLUftZv0ciOyCzeA8TBBYr6dHvzEVZLMdb-2aAFE7mtcmm0XxaA0sdfR2-h3SCVMo5-pXOFTLwzBCSenmXK1c9yCieqCNmE_Tlz5MVpqzNISrA5hAl01n/s442/pbic2014_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">PBIC 2014 Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0XUeQpGTD2KyyztpTDjY3hNfDpazuc44bQDJxvy-s-n3wsjfTOYVgS_OaY5dyevWlzaMCcxVhmbtJMYislLuAYNVOd4Uj2m8ffVrXSJQYdZ_s2ITsw87_TrEHZRnPBFrSYDcarjAKbaYPqy2RuEcjnMYZKAdBYMI9JCi3-ecKw53sCD2QX94nNCDJ/s442/punisher_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Punisher Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidSCxcCYni8oJPm_0s1hYZqPVfV-MPSZEQZCtj0ssMleJn01VEmMWoHIZoPm73PA5lK8yNw5ZSY6_75_6zOxapfE1RR0kPB8Ak_7f4MIn-L5eXC1Xmj_sKYdvD4yRUkOLbn9U9JRhyyHJN_jOm6334RyDnODtnhdkbhF7wwg-7b2Q3pFlGSoIn-rb4/s442/olum_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Ölüm Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Kontrol ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikbwQwyD4U6wDDWd5KufQfBlVCeG9F4JwJ-W3tp3LKzMSzbl08SdoQQ9K2-qmSymuTGmYfmUFdtIbNY1cc1QDJh0ZwBiTB1-TlAMJX5pSJMo_D4A8RnXzDfbE-HJO5lcBTIqlSzN32HKfJtPHVB1NLmKkIOf8ru0dy4vSWHOYtVqozPMT3StiGVMpe/s442/alacakaranlik_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Alacakaranlık Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_3oOmdvK4NxqRYnQ2TMaTDx1gOmksDy2s94Lnd5UCY12nBBSTfPzqfwWGj1s7WCtG52LbkW3lu8pcgY7MQdv_7fxpSH50bbQdOA5NJ3skDL24tgzjq_RRyNOX4COzVbRwu-DDl63umHCg0x5Q4gCp7DelThUiPiNFFNk59JRwx9Ycr7ilOwnLVFpL/s442/altin_mistik_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Altın Mistik Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGUJY1gupNDLgtnAHsh_TZMLCiV7xpYsofEycL9_CdSuZY6A6O73dtym8jfPs9DN-bR1CMu9rwTTUykEhkhR9s7Agds0krVJWb8-q7Tr1K9oQhJ5TwbA268jQGE8OQ6Kw7L6sTMtgZ81FxWWWP44s9CLkVsjpcEMYB9c4-acyItnwRSpFE1Gn_aUzO/s442/cadi_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Cadı Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihtMmhHUhlqoNw4CzYOzTEA2p44KJ7ZPbx1DcYpAfh5kwQ8aVrCNnUDtRYagcSG9FhPzrW9hmfnLzv3r1GsRmE-013c-1RQb3ycm8SUPurRNt6mrWWp_jvj4bgDUDSNe-qbjqidvMFK8jV3FttQ_4WDvLQYBLb0e-dd3fg9DJ4B8dujgUqi32eYEE3/s442/dk2014_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">DK 2014 Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgODjcV44M7JruQb82hin3OcQqcMXfz8P7nCApLUMZqCv7GHhKLEFluWjWmSiUjqpVAd6HY65VmFsp1DuhX-l7TeKAiAdnYmNB9XQX1oGu3uW0UlH0V2ROZgG_J7tzypDyRVArHpbr3bYiGDGKL_4wedlLa8s6hAyFZBYtEPXy_fiyKCOjQHk7-vVMl/s442/es2_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">ES-2 Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhCkoI77TrwZPaKhqKKRWxBkL_qZF1Q82LkYpuenNhCkjgAdCLzWTNR4RvZuUEkVPi81ZpW59T8B7oY-xQ1uQPaUk42bZisKe53JNN8v4S9MuEoxrU6DQTUEuaf4Qa16iv24DGnNeWFOoY_fha1pyFafI0nf3LgL54wW8T3Bx9AhnfYDDLSmf_Sz_h/s442/flas_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Flaş Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWQcB26eWsV7uBhrSxwo3jJYva9ZFKgsrQMIikkEadx2mdWmHMdW3kvd9XguNjEPhYUgeek7T0gobpFRdkrdlELCtzifgn4Lzhiv8c1dy5Ij4g-eIs3yh_D109tQDkkzQF1roPAB7GmAVFOwb0f78gM81Y4_EDoHWigWDVvhgwhSDucZf4WML7Pch0/s442/ice_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Ice Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLcxOehfQ2TxI9kqmCLj-nEWUpgBm9Jd58z-OBpbaEmn4YCOcP90SGhv2qh-5CBa8fViFtHeozmvaXTwqbz-z2DJGbPQLp4ddWPPhyUynftHTFKj1XOpx25AWUoNKHtYI1MnRWiLJHc7bdkEW54kMGZ0pnvzvzSOwpMtKHRl95MiUdF8_qKuMe0wEq/s442/kizil_hac_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Kızıl Haç Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Hasar 5%</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkG62KNkpwnpjdKe7Z-ZYJcNYP8RaAXpzJ4mhmbC7hrftKR1X788EvEb4MrJa5ltSmhcM1YeeezQjB49YZstB6QY31iN-N4qDRsgt9GEZMemsN87aj64CQi-FfkG7Kfur9e1wgZEgAIEwEGa3sxg-KGfiuOW9VQ42rBuSVg4XxwsHF7lE3-1CNLIYN/s442/mucevher_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Mücevher Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> İsabet ↑ <br> Delme Gücü ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8BlO_68i2ZvQDZ4jOQ_50adHUcFUuLXHf7Bi1uVAzf6WGfxLMtf4p-M5QWaiOGx6vE_FUteO5U1iIkMPJUV6T2FeU1GxdXGPkQpcx9stcstmPZKGkRGxXM823rzpFoNi3hR_tkXUaEvlZw1PelFrPPv2G-PggOlKiNi31W4xlGfPvJVqjRCZjYs8d/s442/yeni_nesil_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Yeni Nesil Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> İsabet ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwNF_9CX45fzBBlH20DOw3jBpUzI3jo2HYW8vfn8-Yg2p5ped_OJ6UbvFO5dhm0yroAp_-Ea9tXRxzvqnoxsFYyHpU8mZVi4TyBeQaCOwV8XCBKIAPTxV02LitoFb9yHGrfCtl9QLSC2RnLJ1UpW-JF9cgGonzEwQrlBEJzyh3Pqo51FdzbBPOeUFG/s442/pbwc2017_basic.png')"></div>
-    <div class="content">
-      <div class="card__title">PBWC2017 Basic Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg60_XGOHMtYLoAk3nD9QSfMY_bDrWp0D8ykPtb7aWZrSPYZQmf_980PpA5uqfU3h5bUCBoXhmMVmKPrVS1Att5tzuZu8imSGloJnzwN7ihKgoymQd7eEl-Oz45KfJ8VgY5oUW1PKmFFL8YF6efpxSZVjdDDx3Tlrpl96EPTWavv5PYtpaMBDRDXn2N/s442/pbwc2017_pre.png')"></div>
-    <div class="content">
-      <div class="card__title">PBWC2017 Premium Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑<br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGhF9wzFhtxoMU9D0UTl2q6CFM0YV2xFm9CVbRXNMXXSs9LBJ8I7rR6WYbgDziz_2zLWUTVxFO4jI-dTp5CL4ixebeg5wf6zLxZC3taBblyWAzFAYFtlCJIBysl2bwvhkxbHu9QLZfSeRvkleZPiQAnGJAPmioSaQZ-0w-NiapP1BiPGDMxgKYcUNz/s442/mech_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Mech Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Kontrol ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjybVjn0gXRpK5ih6n0sEE3XKx1wm3LofTa8gRG96v1P_NiADQSp-LI66HdeEWpY79eokfBhzREHW11vRQAgEQ8dsft-JR-v-3-eLfW_qy1hdPbewnW-DqkWLe8eQFvOE10jhYP1kj33zAwSuqaqGGUHjrvXllT8HCawX5MnSthboBY5Fc-BNrqVoOG/s442/msf_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">MSF Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Kontrol ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVAf7ftWN5HejHHsWApETz4EG3No7HYmGbdiDHyDBAhWIvwt9OmE6bc7YNKUoeqR7M-9W4Shz9PqkVtxaybCpSGbWu4bjLEpCcQghEGjYet3fY0qp2YCCNF478StfnIDTs9XnOw_J7lWYiyRbZ1MXWHBZ3Dryh7A8WT9BhQ9AZW9SKLMkDX4xJlB12/s442/pbic2012_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">PBIC2012 Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font></div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmqYyVf_nDFOzsQiOj8VssELr-QZPmhB-sww7Q4f95UNbgyyIGoVpajfIHBNwfTnT8I3rhHm5AoPzn7Edwd6KZ_crIyhLaWQuSO6qhUU2OYoJjybODFadp7P0JOhVARqfVbPJ8iQQ_qazgZnuerZFXB7awoKxLiR-qw-7siKjowh8-6HfUc3ygl3ZF/s442/pbic2015_basic.png')"></div>
-    <div class="content">
-      <div class="card__title">PBIC2015 Basic Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> İsabet ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVqpapI6T3qZEr75Z10M9apooe7PSAZUPAJiNWMF7HqkVL2yPmMRfY-abIWpwW4AGo5SWwXOV_TEKtUnoYrehX9ZK8s22mqpYU1ZS3JmKurLjxCGsswJ5gYO-YEC1D7iCERMWSo3zRAWXubqgMbPRmo11RrqWZcQT0M2vUE4-kIpIeh7dTRa3TrEKU/s442/pbic2015_pre.png')"></div>
-    <div class="content">
-      <div class="card__title">PBIC2015 Premium Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO8pm1hEM5_s5D6gyQJR2zIrSg4d2B6gdQJfO-mAvnYetLBMFT8dG1hsQZ-nqhL5lGHjFdjP8dCG6vr58pkyvN1l7Zt9j-Lg1IN7hsYJZx2DEwj6k1LN-M1xFP7AXb9GU2V92iKx8jzDH1NpvS_v--SveeoMoMkA37_3XCLHMk0eEjWrGpvinBQ1NA/s442/pbic2016_basic.png')"></div>
-    <div class="content">
-      <div class="card__title">PBIC2016 Basic Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> İsabet ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx1ZspHOnGdktGnwhMSR6DsK_9M_WAvfw0V1HGMq7K7b-53hg-EUdSiE2fo0ON_vL-RRZU0R458Ui3AMSkBItr34WCFLlrwZnWKemkie151msgu_nWDST5SyD667p74TY_mur3tBen9qHU3m0LTG_L9Djv-ObHJBiy3_GpV8GLTUp9xrep6I01Qr82/s442/pbic2016_pre.png')"></div>
-    <div class="content">
-      <div class="card__title">PBIC2016 Premium Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiziCnJ7ZFHZE_JRp34FCIOdNbdbdGsvbhshwNVhIxf1BnDIujIz_1tccAuNDGLa4gXdGg8DHuetWHFoMUWnMZ3W-95xShxDmcHGzZgGbXgTZcd65mACWGYw76ywNhte7sO9zp-kvaNa0Sau01NxLbOSwiDqE0iP8qqPihCq19cMQrgHiSIlWd34gGp/s442/chicken_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Chicken Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiW9B8d99QhJhYbo_AQFTV4PTahLtVTFcPe_klM-UR_scHHUezWnzj-fu0_friyucgIloHsFkVHx6DpVr5wkbvQY4b3bBt4lLtwvw-qJtGBlPwRbDFklbIlB_qa7SkYqRMc9N0PAbICMkwx9SZPb6A4c73bDhq0xIzVVpnMtZ8S0T089DJg2yztTSlu/s442/pbic2017_basic.png')"></div>
-    <div class="content">
-      <div class="card__title">PBIC 2017 Basic Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglTt5Go1wwNhwNc-g6sUppo2W4d3qEeE-4uVjupGPjQ5hhc0uq-B4nxez_Zlkqyp6DhyHalAOivT3vElWoaefT46-0mTUg_bsN4cU6EgYG2tShrLK72CwFReKAURHWCL7rVMEYjG2G8Cs3gzLb98LK2x7xv16XzqgJY2TohTUE2VUjzQ9BBJlAIn44/s442/pbic2017_pre.png')"></div>
-    <div class="content">
-      <div class="card__title">PBIC 2017 Premium Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4URpcivz4wphmVcEkXgWUriiAstOsmNpWq7_Cy6w9z419mdQlo_JpO7L274UdDMYZ7Rw2fAIgnGmCqLbxgxvYVvWNtXqXqSin4vHfDrqSgRt8Zj_tpB54Be5JVx-5hW7qtwllFKSf78-5Mc2SGT8Q_f9rxzdkfRItsKfvRa-o6uVlF0KequPLDNZJ/s442/pbiwc2017_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">PBIWC 2017 Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSMVw3mHT11Gy3ClWmoKKReMW0XEG9vutwcnX6lI-ITaVcFPHSVCoeGvmFrR15Ge1jCVChphPR_8vPdorwTN5MxuzTb1VqBlqCTtJQG7CG-bjLmN5RiLqh4hHupwTaWrFkws3ibnTD1bZTZfKSHC_d8B074VfNy0stKHSEHbHYwsBYQJRrNFBUeCC6/s442/pembe_mistik_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Pembe Mistik Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Delme Gücü ↑ <br> Kontrol ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5rWwbZXk8tJwU7e1Vym2yicNazFD-ZgNN8a3JssZdOA81dINTbd0mOaxh-wUGm1MkwMa2UUcq6fCw2OYNqG0CdfaMsdE3jNOmUtxgODh3NvETYaII_SQROPXlYk5HAaIUm0tbZhNo3IQ9ftKUuxcsTm9WQ91p6Z8JCcyzkRGdEin2pGmw80mXzrLe/s442/phantom_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Phantom Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm49u0escpU46GahH-lmmM_NF7uPg8_1hxQCUG8ZsiETsuYfrjaCKQELIWHqndhT0vi1p1PWFC4O9OQWjrmnsE8uTqqtLtRbtWQr1zQtoOdjymnWmA69iRWMQMTdwe9Mm8cAgom3sy39526G7b3Qkj5eW5Ui2kYBAqkuwF5eCMIk62IGzdECDNVGd0/s442/platinyum.png')"></div>
-    <div class="content">
-      <div class="card__title">Platinyum Mistik Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHx1PHKgru46LrSeOycgg7xSVT1dkhV-UdU-kA0UkAyfR2ulGurk-QaQZpVpTplSU5UDK6lKsWSUll9MT2NZO5OCOvq6fhVHSCq-qBJ9zCAuA8-FH_9SBKkVC_vzhz1nvnSvCGnW2NyIyDCVlV_abaQgopbRsYmOPP2gyRcISl-vHPt4oYl0aPQMi6/s442/rambo_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Rambo Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1pxaB5KxaZ2DgwEPae3R6PCzzLsac0pdyDZdV_GE9WnItB1DD6eBkhGiLCnuFXZEFhlO4nJidFbHYVPXG3-h4pBOf9IJFUuRfU5tyi9lma27ju-yjHdII-7qOf4yz-KZB73KQtXpoxF28EqiEmIvO0zWDFcmENboSPlVzry5g7Morqy9SM1u4tsLA/s442/samuray_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Samuray Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD6j9kq4rgaxTJd8r7-9dOnOcjmPp3_yFGOmOAP8qUrnebnbs-FPptxiXA_BZtrzOzY8anCk_oqLqOuceR8BCIKxk1xOJRCeKPV8PqscRR9AQ72zVCYsc3rEGntFCtKGk5VWg_uGxjXpUWpvDi8HNGUvfl8Zo0PjDcyrJeThxHQ0q81EktljnIz7w7/s442/yildiz_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Yıldız Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Delme Gücü ↑ <br> Kontrol ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmEGQbcfNpIANSNPxOtqzeCM25-wNqEcxArCeFvLpEqMxIJ3oGcQ53Wt7h79T8BZk_daw-yObiAqjgLnRX5drdlyqY7IjT27p8hREfsddWHUd9m6b2EQpApTyYq3GDnYg4AUVU-HlHiqTzAQxH71UIREMOh7xDpKw7jwjBz_j4eQmlaijrrStToPlF/s442/olumsuz_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Ölümsüz Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOHt8tIiZOLWU3gtqxMkUWIGks_Y6w2aWoOLOXx99naeRkBF6d5cG2JekxRHqLSLiZSahySERK0MsCgkCpoJyY9I_NVbFgvxmMN-CNiSU0XUaRKXVTil_sUXYDgLb5kX7wrg4QoYPaGsZKIMBpw4_nEjRyWReF8L9Et_TOYnytUjKoIRDZKwrQvTvy/s442/iskelet_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">İskelet Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhO7KsvuXtGCCVnmFbHymoZ6iKpm7dL2g9qfmEthNVYiTD3fkeMImdjeMzUQr_Ox0vWcXo_Mos3yy2ci4vxlaFpFduQxyg0Of6KyoLw1k_nWQy8GDF6QfJlfruKuZ7u-WO-KWJ7NnRF5Bm_VA41AjEt8zHeT2vHfs1lOABQY1cvNhpjoFJWl51UDOMm/s442/pbnc2019_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">PBNC2019 Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi52A122bNJ1xPXl3MMmejipGXCvryb_ac_Pst2gZw1VMAFjz1mGs_J86kI2c18PT0St8V5aKgSdM0OXteIa5tOGiO0tx0J8nk1Sfv76M7dgZsx4X49fLAUXrVDe__AQ_G80o6ctwueqm45yLFK7Bv86fgTEdJGJx3gSlIttVMBOXBq0BoIK77Vlr7t/s442/digital_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Digital Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div> 
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWRATd2BXm0kL0XADGJ30JV6B05_Ug8hmH_rHt7lCvoeBlkTDsmORxMyswqK2TvGUo94n5WQf4ov28iVwdY6kuFczYcKvgFbbHk4OpQipdU_TMtA2EOva1w5Y1KlfnTkLq94KPYnewbsu7fzGtSytxlj6W1e-d9tOfUdDtCCEGTDzhLi-s6Bpo4SCV/s442/pbst_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">PBST Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg97PAzTbIf_r9P92dW8sMUZcakpPZh7GwGrgMF5RYYJ4y5GimKjbBHlmkLcxdXUVIdK-gfU7nfVmJZtCKGoVd7uoz6JUwMxuA_VhN4qkSSb6rfmbiSofECLvaUvZ1b6hKrTVyInKbFk0IiBqp8Sga87U2LFIgq3pJzwQpsxV90Wpb2xmsTSlgrd3lp/s442/9.yil_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">9. Yıl Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_Pf3cbOvhUpYo4i1PdXXHwrhZ2RKkHaUlUzVLoMPRhxRe30bCmU7RVZz4zv2EHnjlOZQjmay54O21WgUOPFVGpFZqJwuD3aohzFDHjBFiay0ce6_SiH24ln-M-YjIDL9rAls8lsxJmcxnns5D1J8ck-q5-ZVf88RG6wQosCpvbU2tRHfWjfwJS5yI/s442/acrylic_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Acrylic Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinUMp2j5yjYEMpOiQqwo-ZAxHnt5iB-zNHUDKhCjUghxMH8oCQrJVJcYToBCw8K3zOlDkaws8_bMi21Tge9gATSqXnELLwiQgYoRM2JF_2q8t7uWUCjqSiSZWK7ouQp1uiw9CjfO2XzYEU-8SzFEc_E8JSWbIbDxxtProMY9cxMrwLnxcgvhuWgsxg/s442/alev_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Alev Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Delme Gücü ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYIeeFgpOA4uS9qtxeyngSLk18TbH3sLxqSf-FdR79i_NZAXlrjkl1qe0p8Ng-h7qWvm4CaoLi29xcef5NjwUYB7-rqybxIWyhZLjo2-29ah2D9jgf5HmCrjVDWCCHaM0CccvJ--tPL6Gs37izsT_Ip16gb_76Uj1EBI5OgWyc7xNnmGiEoagRrgnr/s442/altin_orumcek_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Altın Örümcek Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Savunma ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ60F13xYFjZOMGQazC1-_1uZ66ZeMzejd76WOw2oy0JWuJ2FsFQAiNy-cUYa2_yh_6kONZe-Ujnc6BB-ePjmAe9MooQoYSN-hIXTm2rTd763KjGT4MhcTqhCkeDQQTi1R0QS9vHz2KDw074VCIW9gyPt9uzfBapeyFYyBUMuWCfnqApjvraAfLpGY/s442/atari_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Atari Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghQUEsFKLNenbWu8g7z83NqW0DBmFaJzWbneIWjm2iAVF6Q4oSh4KAsx3VqFpYrAJYAoUWNBYzJg9E94d6RKG77ylt9VR-CRl6aQZrIN2yBYwdYfrKT8iYsUks2k1JNsGIRA_f5UXEpqvg1N6FCfVX__BS3jmv_hOeWEHQ8F_DhyrCtlvzFuIt44EY/s442/balkabagi_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Balkabağı Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Delme Gücü ↑ <br> Kontrol ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiKBPd9gSUnvZU92AcB8cI3Erm3FdSoUew5CF4AyUysCrRHn0DxZhf-hmBpQxl4rRTjyM_1OoLvFf_skRjAZtKff2gqkbacLyeflMb38InKx7FvpwOshNNcz9XRtejFFPxcU6luG9MN32Hrk1Tx2rJkCIDC9rTaq-lmTsceQi-T92DI3pKiFR-qRuh/s442/buz_mavisi_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Buz Mavisi Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font></div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjMDYeJ54YfA-jHxRT_UZIvDNnPYjBl81HaGoFezAgfBVygrnA6nXRCgJMqZfGYdArmogLrtPuG4yQU5rDTcG9UYa8_ZQHuE4CAcvctBiK6ToP2ZM5jN2qsoKSTdZb0-Jn71IEbCyf41ZGoDuChX19Y15oCObzShiilZLufGMuHGO9JtuZuu1puP_J/s442/crimson_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Crimson Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYrw13DLlNfnX_GZsypO4Cx5_6gVlygwZn49WUdwGRPn52ZjrP1BbSkDfEksRAQjz6ef_oohr_PUeSUnnbPLDlb0c3YDHI8dNQyUCSAUslmyLXQTpWgR3r9RB7G3ChPnNPnEXSyZpQ26WzpBvA86dw_8aEbXGP00vLeszzosmto7e_7elJGqmKpflO/s442/demon_hunter_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Demon Hunter Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Savunma ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEuqmMVKzBDD_wXztUENhr_PM8G21Xnu8DIORFdP7DiOIdlVvAouAGyAe3ynoCJTtB-52IdP0K11WhOgpDy0PUus-0i7WtIRy3RDjJcvBlEHkd8wuvAClUBuY9dxIxx490M_KlmCTpo0bCvrbkv9iKAimgahN2IBFpACXmyzGyuuywBAqIB1ZNnSca/s442/engerek_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Engerek Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh47BDptrPSz3bX2wfe8obQeqfEhqJV5SWXsDIoJvJ3KpjummVO5edJYDt_Y6oZjrs8Kap2zDQu4U5CL0kwY1cPQOgPSEN1UoyBp67EM4eyCc5KAc1gPF2FpwC6IjTZ_qzDd9NnaIxlHBvmxi7NWSX4Xfk_X_qxTDyA1-i2RapqMwIebJErKbYpBqov/s442/grs_v_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">GRS V Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3DUnfzddl_zYqtz6zBBL-SdIPFbTyyA7yl1BU8mDIqDZiTbCVLkRlMJL_etOUwd3R6lDwthyVN30tK9bRyTgRmkVEWlgNOfadLQlR8o1hpaCo4ZTEJ_pwpeQDhi1UrUgbUj-ETPZt-iuTvEv1puB_6xgjwutTZJBtH2joYyc8dOZ_JCpbgNL36A_d/s442/gunzeed_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">GunZeeD Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUBOkDN1b85uMPeAvRBc8MyNLsEDfIOxfPskkz46EK_my_wHbMi731Z9Hesf591qPSC7TYPd8KoZOK1BuBBmaydlP9MhtIWHZxbiPphw-XpwEt-a6DOh6Xb3eddwLabW8bwatqVRYwPh2O9QIHRG3qbrqQdLJfTMzdmPhTw3vv0I-uTtXSWfMNb_ZL/s442/gulen_adam_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Gülen Adam Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+</font> <br> Delme Gücü ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjzBdx0jlRJc-diNO3J_BIK7hY-P05sAWAp007aNgWqWt6noXyBKdoesRP5WxB-ofSRAU-SsIHczpZ2XLiLoEkpTAEroPPufSANdxQpfAa33Hv6sB4G8lSvePrNBR-MUtPqkjq-q5QtSIA7LEw6UjO3iy-q2khwZchTtjauVeUNj_k7kPC7NCmW7R6/s442/komodo_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Komodo Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbWYLXcorgaRt6spGx7XmH3PTQLAqDbjzpVhAKsCM46UzJ7WabmkJvLLvo3nMdrL_nmmnKFlYUNOStb-NWQqlNlSURU6G-I1O6llUH9aXCCByo7H1cAM02jQrwgJyq_v6iPiSi-2G7XdmW3xtsGag8FdlILoJ7s6V2knO75B4yniIACQKg68232Vyl/s442/kizgin_adam_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Kızgın Adam Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+</font> <br> Delme Gücü ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLpnBo3XvM6yNIdB9ra_RR26MYOZ9Uo95kqZUibTwOyHdzWgN9D5WIgXpc0-z-OAs26wr9udAOJoCjoeGik66xUb8F8SS-LPLzPCTtb5BBVGkKaLeZUeBk2nCCflJDvRC2DjdpY4i-8AiyVjwSEJNpKCfe6c8xYadvq7n8-KpYM0KlRs0n7i-tpJXD/s442/madness_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Madness Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font></div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiok8NbA9xuKZpu0DdT7DrbeGO6Ixino7Ty4YxAVGEHOSp-bhck6oemzHBbrEJ9tFyFQnAWx6pGvG6P0eOjFA7Mp6AT6Rc9iS3GxmHnU91mNIDRIHXR4aLiJdpAGe0Qxo-huNt4tGNhplsiCQ4FNjvsCc7MuaHiMHRTQc2Ejsmmzzqq2IpBZRJBzYdC/s442/sahoming_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Sahoming Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Kontrol ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGyE2hSnn1JegmxY_GQKc83wU4duhTaqH2EImxlbRDC20Pf-6QQrLqDUBg1c0_fdXBBkLEa59TH7hw8UGK_AGIPTMraSmYECj9b9ikpqZl3lqfBbF03-lGjK5NHF8ILWi39yf-84dzc77qg3JPIGJVXPAK_msG_nkoqVtT3P-GO4fMp-K39PX4VyZz/s442/nusantara_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Nusantara Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTZBfPZFNLHKG40oLf6BxpnOd6P6k_urCNQVWUc3qyz7W2gn_tmBaAvmB4oa4Wld3v4Uvmqh0BUagPNe4UtEpKKs0ylttteEZcnFv70UGXiRCm_dfUx0Rq0fZ-Z3Pm1U8wObCrRhMEPfRwE2uuFgDEkOzHKhgUYsJRI7KHRidNzcn2FqBn_qM1hQAS/s442/pandora_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Pandora Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQIhw2fHHAA_AsNNH952ki_spCEFWGLqtbzkP7cqGKKFJrDUUuQztdkBEXmI4m-i2KdtsRIgpfMi07pYQrSo4v5HLJRwzmOgdJQo7GRZDX798S2yYIIi__ka-vCMLHSDKZsbkxslBN_vEkje7ZUJmKeEJUB4_L97DUb8mbexfteM9n7VFAVEMi139W/s442/pbic2013_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">PBIC2013 Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Kontrol ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHfSPJXK-pr0PG0XmBLAEy-8YdzFqUwrwDV-mMSgftAHY0DCxKQZg3FWJwa6KBcYOWZYQAmYre6SVGL6-Z0tajmfwDZl562zFEaV8niADMCUBH0d9wnOAxgN_IAYEybwd5KeBtTsYGIPp7zK4Q0DdQel3xHg9Qdl8up5I_8iEpCd5EeNWE5A1fxRV6/s442/pbiwc2019_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">PBIWC2019 Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN1-iI10GFZRs5KCcuO_6UlM3CcWWKYjVQznfwziuTl-mJ2C0YYI0i050rZStifKd19x-9h8FMOuQYD2-efBhe2krujgmag_SgrJ-H7cwdidvd7LYPQpz83oBGDyL0BFJVXUWgm3g6RNcNzRR6Dp2UKfVtqyY10uajPhDVV47SMMKz7zT0xokQjlL0/s442/PBST18_Mask.png')"></div>
-    <div class="content">
-      <div class="card__title">PBST-18 Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Kontrol ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBuIpmNXwn6LASTPM5xqgsi40Agimq7vVJtgv06Hat7xnwTdNNy8BhYjdIacrK64n3CvoiieJndw7BXlABcoPj-NnU2mpZ_8boS7m0DZILfaaY55fS6lZyRL08aEkoySJ7kVgVwDxZaDnIfpqDdKWVm7nbUDlJ66ykJeHM2svnRHUxA1FYs5ZxIUbI/s442/pbwc18_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">PBWC2018 Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcQSCLTQ7KnccvqA6JGfOiWI-0LpSXjI8VEX1kHXYaO-Zo0WMkkU9H3uD4pWjwobcWuwqPyko6bN1v10xpt8_XH50_MsILJiZi9nuCLMNZtswHrjtTEK6akUdEWXs0kzC_qMaTjSojlCEQrfNZ7oaYJ7paIzuWO69ft-ldj-ESa2aSpXiZgMChOeRj/s442/pbwc18_pre_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">PBWC2018 Premium Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Kontrol ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFbnkjlfcs_7xGsmxvB0L-ZJbhP3M194WuArFcMBEwdh4VwTdkuulQgXhi2Rxn765HicOjaU7dZp466NczWV7PbM01byQrblfOjqGFYJFBqHpUvLG1WYopisIYy3zBVegH6BG3tyrhzf8uOwkwtUImagoCUCOEGWC6gCH5CYtN9TO5Q2T1xPiNPymf/s442/pierrot_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Pierrot Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Delme Gücü ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk5u6LEjLCfvrX2KqVZ3_naHOZ-MCJtd0Hes0dnm8XxaP9VAKA34h_xlYXRjPHIedOoHbmNRNDv3nyQOZbN-k7uoCavXVIE_PrMQ5suTTaJ0FKtili6pWzFsM45Q2Rt4JhPurUlMANsceWJyZwJqZ_Mne9QbDCKBAre1Tr5WPplnASsqc4BI2kD2_2/s442/ramazan_ay_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Ramazan Ay Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAMjUQLnac3Z4Jmoy51b2SWu8hUQy4x7RoHXFHiMee64KI5194TKrD1NOrC5jBHi5pwXeHJzr4u75Fc9ewQqhtocQxCjeiTvGxHCpHAuC8dEBAxYGnjOgJWRQ2uOw19wfoPYGDjhZvdNBon_ehYI_pxgGMVawdLHY1St1Ro5_MEd6brp_BwpYMOa9p/s442/ramazan_yildiz_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Ramazan Yıldız Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipI_gS4zCpc3tPmvafP8ilNuwxkJvLIauv14ZERv8HCigiSMWjwzcS1TGRGBiMN9ZEWlB9lUiHdxKaFmcyLea0hjPVAnkhSuDLpzYxrZ5fGrqzWoTiPnhpUF0QjC62RChbGCvKSsmOOAHWxeWjxE7rwfFssuf76Q309QI8i9oxt7kcXZvBxGYuZdN6/s442/rust_iron_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Rust Iron Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Savunma ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizEblRzF24_rFVS570r4FGgQgNG6NR4QFCMA3idl9CZNs3W0NkrO_eGNT6HQGMCqIRaU8CqMSF1XCwtc9whXSTPyNrt9Xp9ImUY3hbA4BkXRNQqQlCxj3BfxV579IBZZTBX9Kb8MepAb6bNFj07Al-NMYq1mfI2e5HRRxaGc6HNrZqy9eDHGvHgCU8/s442/safari_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Safari Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgO4-zGzbDYXlXOxmGA2I2-mAXx2Lihd4omTDZAJUIC2VGzLmNujkB2EaysKB_fFvcutxnO0xDonbuVx4rqbgrWKvYjrFFZslBWYQaR6cFkL1knPdfEXrWEn0AVR6rWb-rON4bL_xzf1_qFKs96dopoZzqEonvURsEZtv4Xqw3fja6Aq2oX_GC4Ak8T/s442/safir_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Safir Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwA6JFqmtQxDu33ThEZVS22vqdNTjv704dHQoUO9s9AXR8rbGn-n4_cPAqsUtqgUN6-NqoT8XiW0neUmBzV3PVJg4aAGhyE_VOxsTForgVeSgCmK6wEy-yJDjMVnETvTwFIxe4AbwbSUdoyGcWDiRE_oiVwdcuPYbKKFG0lcMCBqZ1ynemFzk7LcZR/s442/safir_pre_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Safir Premium Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjR2PvnYBxbymQ4oVA2204PU4WX9j8raib1KSEPti3rq79psg8CSp0aFVZWUYSHDayZ1is2BlX1e4CiiaRZu56nuoXTbNsDg6iZUrUnwZX8zV-slsB5FH0ESkbJ4n2KymC0ga_8Qit54bdsus9Z6_BkDA_s1t6DYi9xr5zuJtJdgon2shWD13FbKbgv/s442/tekno_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Tekno Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaaRV85cCfK6mrKwk3-7mwblrmfR0J7XLL7X5evBCEW-8MlIdxNJJtsttsUjrbqiBS0P7yah9erfkzXkZSYtQRDyybwHPzEU9HyKyOQ19nC78LMVQ_i2Diujk9d2Y0eA3p4eYsqgiif44s7mdq3RJBRm026wWPUeCthif7TJLnYaHvlTFdw2ANACP5/s442/yilan_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Yılan Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font></div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiob4PHYQJhbsTGnoB5LiU71TBwQgQXZ1-hmA7XIiKUkrH-DUoYJtGHdeBL1oBcHzaA4sTAaWsUxmjWdNQn_fRwcLqgMm8CEhh0WBpslMVbPwRHDGx13k9uyZYPjtTmzuCQs-cTQnBcIvc7Heq-Qwx1nMZ4AGwtYJ0ztROxHfrERaUwZfDqoK-TUXw/s442/yildiz_2018_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Yıldız Maskesi 2018</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4MUSnYM5utz0Q6roP9UAoR0uYrAcGkw2WrAHsjzGv-mLrFFX1NS_-CdUp1ru9wy826OQpoY4bY1xhiHNO-dQ_XbT9g9feudfZVMu98jpzwnzgSnqCHLgi1viQ2jBZBrkxmkhX8YkxhyYN91_kclnl0rIQ_DUBzKX82fTE20qK4WjN4nTa8eoVLV1B/s442/saskin_adam_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Şaşkın Adam Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">+</font> <br> Delme Gücü ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzT87qhWIWw_9MjjL98DxIULyTd54QG3EAhnrcCli2oIMVKzOvQlIDPvgHNjd7hE_3y9v8vsANi7uhcZfZEXNQOVQSb9lhL76wjajRPIkEbry8JByhmCuOUvs01aBDKaEnODFGm6c6GzQfSf1XDRwNLBTriPTSpafhaUsjthOPuZ3C62xfWVs8bV2l/s442/sampiyonaslan_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Şampiyon Aslan Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhq260AEv__-7xVLLN2f5cq3w3-NYyGA_Vg6QehZPMyc7bAGO4P2Ik7cd0_LpyT2p2O_L8U_8vvzpFku2xO4Im-cCR9qllAuYdqbCgcM0sAyUa6na33Rwc_VZVmNt_epcQnjU_DcAVmBPY0caM2Sp8EYH1DnvgBcMdNgAwTXEwxXrYKrRdVoxjBFuwG/s442/ahsap2_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Ahşap 2 Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw-3dwx1FXI90nQTnWWNC-Oe6BgFxzTgusR42w6lYPDjCvQe11OlkuH4NmJ1_LrsS58pSOmosotBeDYWRrFKBm9LQW5cs2oydvZTOSxTOuFRLFBW7w6p39DwosiNMiaV2zGmMeepbAoViWMMckzn-SNlESnsOXRSKra103ONo1wTFhgdffwKjJAWj-/s442/ahsap2_pre_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Ahşap 2 Premium Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjlLc587Ul4KFqwwNBmyehqTEQ9O8l-wK_JWfLNSjJvzMGSz2ASXkr9AFzDwOvviHvAYIyq0yzp18XXy-G3J6WpwQUSqVy2mSGQG3wEw_1OhnQs8aBTAUEWLK-eqO2OFWqIkcxxPHcSWkxBof4PWpKbJcC8Eq57B3gDFUzU-LLwa_TuhZttGpmfhlM/s442/pbic2018_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">PBIC2018 Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHNgrDQS4bZPiknBuLPzvzD5VAGY5D0PLkqU11t78raW1VN1jcxNcO8k5x3yExxaHeUjWMe4hcAvfpo2UxYQd4rOMH3jCF8kgCPvBfV3sYKd2zo0iZFea0__XXC0oaqoY4cA47aYSkUsdDRz-n4ihfl84PDaIA3S94ucVHwj0NRstZNRBCiUfASsJ4/s442/pbwc2019_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">PBWC2019 Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
-    </div>
-   </a>
- </li>
-  <li style="list-style-type:none;">
-   <a class="card">
-    <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfO1c86KQm-kATZJJsimg-VBc1ZD2sPkVvPZOmueMc7_zyPlZ8lmmi8kMMtfW5-8Q8vUoj-eWLj59mCF5zxmwKySTRGpLUWVu6wqr4tCYRYBR8JZjX22JPVkX4mHfCQJ6Pgm8c0Io583mrxW-bVH9SwK-ce3uzfRIfh-Q4ThmU7sB6bqvqjaUn-Ho_/s200/seytan_maskesi.png')"></div>
-    <div class="content">
-      <div class="card__title">Şeytan Maskesi</div>
-      <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Savunma ↑</div>
-    </div>
-   </a>
- </li>
- 
-</section>
-</ul>
-
-<!--- KART2 --->
-
-<ul id="kart2" style="display:none;">
-<section class="cards">
-      
-    <li>
-      <a class="cardlong">
-        <div class="card_image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNvpfZTsPetAcC9OJ_xO2klosArKIQFMbwAxLkGiuuwgyyWMZHPI09bj4EdJYIjT6vEsdFVJPIG0TK5P_pjNyM1NMT8OObdwC8FgjJINpepA7pl1cvfz8ulS1oVDbigkXPzgAHbVVgbGKKT2yqgNaLklTPICFGkBOkemAG_UPUQTPqBArmKD7v1YUr/s842/krallar_kasasi.png')"></div>
-        <div class="content">
-          <div class="card_title">Krallar Kasası</div>
-		  <div class="card_info">Aşağıdaki ürünlerden 30, 7, 1 günlük birini elde edebilirsiniz.</div>
-          <div class="card_snippet">Aug A3 ES<br>Aug A3 PBIC2013<br>Barrett M82A1 Premium<br>Kriss S.V PBIC 2015<br>Kriss S.V PBST 2017<br>APC9 G.<br>OA-93 Yeni Yıl<br>Combat Machete G.</div>
-        </div>
-      </a>
-    </li>
-  </section>
-</ul>
-
-
-<!--- KART3 --->
-
-<ul id="kart3" style="display:none;">
-<section class="cards">
-      
-    <li>
-      <a class="card card__gradient">
-        <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-KNKtLzBdWC8_L2_ooWcs4GzuHPmp1-5sThoFPVwK2BjNKJWOuyFH-AXhbIeWP5vzpkBOEgPeRGMSbeem-aSy3JVFeYXEaCNO8cB0a47INbN9JVN1cvaW0qoU4S1u4f5XpSx2JhaM-cjj0HqjgWiYDLe5ezdikjGNwxFd2CMh9_OqAOvvPSgIo0H1/s442/AUG_A3_ES.png')"></div>
-        <div class="content">
-          <div class="card__title">AUG A3 ES</div>
-		  <div class="card__info">Taaruz Tüfeği</div>
-          <div class="card__snippet ebenin">AUG A3 ES, siyah yüzey üzerine mavi dijital çizgilerle bezenmiş oldukça güçlü bir taarruz tüfeğidir.</div>
-        </div>
-		<div class="rareitem">POPÜLER</div>
-		<button id="modal-btn" style="cursor: pointer;" onclick="openModal(1)">Detaylı Bilgi</button>
-  <div id="my-modal-1" class="modal">
-  <div class="modal-content">
-  <span class="close" onclick="closeModal()">×</span>
-  <div class="rare-weapon-info">POPÜLER ÜRÜN</div>
-  <div class="card__gradient">
-	  <div class="ortala">
-    <div class="popupkont">
-  <div class="image-div">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-KNKtLzBdWC8_L2_ooWcs4GzuHPmp1-5sThoFPVwK2BjNKJWOuyFH-AXhbIeWP5vzpkBOEgPeRGMSbeem-aSy3JVFeYXEaCNO8cB0a47INbN9JVN1cvaW0qoU4S1u4f5XpSx2JhaM-cjj0HqjgWiYDLe5ezdikjGNwxFd2CMh9_OqAOvvPSgIo0H1/s442/AUG_A3_ES.png" alt="Resim" width="442" height="442">
+    <h1><a href="https://pb.tamgame.com/ranking/individual/list.do?ranktype=exp&keyword=Joaquim" target="_blank" class="rainbow">Joaquim</a> tarafından hazırlanmıştır.</h1>
+    <h1 style="font-size: 30px;"><a href="https://www.instagram.com/pbjoaquim/" target="_blank"><i class="fab fa-instagram"></i></a></h1>
   </div>
-  <div class="text-div">
-    <div class="subdata">
-    <h2>AUG A3 ES</h2>
-    <p class="subtext">Taaruz Tüfeği</p>
-		<hr>
-    </div>
-    <div class="skillbar">
-        <div class="flex">
-            <div class="right-align">
-        <h2>Hasar</h2>
-    </div>
-            <div class="bar">
-                <div style="width: 30%; height: 10px; background: white;"></div>
-            </div>
-            <h3>30</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Seri Atış</h2>
-            <div class="bar">
-                <div style="width: 92%; height: 10px; background: white;"></div>
-            </div>
-            <h3>92</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Kontrol</h2>
-            <div class="bar">
-                <div style="width: 48%; height: 10px; background: white;"></div>
-            </div>
-            <h3>48</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Hareket Hızı</h2>
-            <div class="bar">
-                <div style="width: 85%; height: 10px; background: white;"></div>
-            </div>
-            <h3>85</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Dikey Tepme</h2>
-            <div class="bar">
-                <div style="width: 57%; height: 10px; background: white;"></div>
-            </div>
-            <h3>57</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Yatay Tepme</h2>
-            <div class="bar">
-                <div style="width: 48%; height: 10px; background: white;"></div>
-            </div>
-            <h3>48</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Mermi Sayısı</h2>
-            <h3 style="margin-right: 125px;">45/225</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Menzil</h2>
-            <h3 style="margin-right: 134px;">100</h3>
-        </div>
-    </div>
-<div class="tamstorebutton" onclick="window.open('https://store.tamgame.com/tr/urun/aug-a3-es', '_blank')">TAM STORE</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-      </a>
-    </li>
-	
-	<li>
-      <a class="card">
-        <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBpjxIq4W_Qc2KyidYQfF5Khivac72Q5xr3KmLThR8LbnxKRjCluLVolSO9wlKjqlLDnPTvcX6F0jm048HFAqVvWdISsnq5Eh3gV7xG_pHHmzsG_o1V4me66v02TctaM-PpnhLu0QX4OyVLzBj709pBEIg8BbQ2AWdLCUpQHxp13UNp54h0GuQ9DqM/s442/Aug_AZ.png')"></div>
-        <div class="content">
-          <div class="card__title">AUG A3 AZE</div>
-		  <div class="card__info">Taaruz Tüfeği</div>
-          <div class="card__snippet">AUG A3 AZE, Azerbaycan Bayrak Günü'nü kutlamak için tasarlanmıştır.</div>
-        </div>
-		<button id="modal-btn" style="cursor: pointer;" onclick="openModal(2)">Detaylı Bilgi</button>
-  <div id="my-modal-2" class="modal">
-  <div class="modal-content">
-  <button class="close" onclick="closeModal()" style="background-color: transparent; border: none;">×</button>
-  <div class="modal-body" style="background: url('https://i.ibb.co/ckDBZCN/Improbable-Abandoned-Chihuahua-size-restricted.gif') no-repeat center / cover;">
-	  <div class="ortala">
-    <div class="popupkont">
-  <div class="image-div">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBpjxIq4W_Qc2KyidYQfF5Khivac72Q5xr3KmLThR8LbnxKRjCluLVolSO9wlKjqlLDnPTvcX6F0jm048HFAqVvWdISsnq5Eh3gV7xG_pHHmzsG_o1V4me66v02TctaM-PpnhLu0QX4OyVLzBj709pBEIg8BbQ2AWdLCUpQHxp13UNp54h0GuQ9DqM/s442/Aug_AZ.png" alt="Resim" width="442" height="442">
-  </div>
-  <div class="text-div">
-    <div class="subdata">
-    <h2>AUG A3 AZE</h2>
-    <p class="subtext">Taaruz Tüfeği</p>
-		<hr>
-    </div>
-    <div class="skillbar">
-        <div class="flex">
-            <div class="right-align">
-        <h2>Hasar</h2>
-    </div>
-            <div class="bar">
-                <div style="width: 26%; height: 10px; background: white;"></div>
-            </div>
-            <h3>26</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Seri Atış</h2>
-            <div class="bar">
-                <div style="width: 92%; height: 10px; background: white;"></div>
-            </div>
-            <h3>92</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Kontrol</h2>
-            <div class="bar">
-                <div style="width: 48%; height: 10px; background: white;"></div>
-            </div>
-            <h3>48</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Hareket Hızı</h2>
-            <div class="bar">
-                <div style="width: 84%; height: 10px; background: white;"></div>
-            </div>
-            <h3>84</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Dikey Tepme</h2>
-            <div class="bar">
-                <div style="width: 57%; height: 10px; background: white;"></div>
-            </div>
-            <h3>57</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Yatay Tepme</h2>
-            <div class="bar">
-                <div style="width: 48%; height: 10px; background: white;"></div>
-            </div>
-            <h3>48</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Mermi Sayısı</h2>
-            <h3 style="margin-right: 125px;">45/225</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Menzil</h2>
-            <h3 style="margin-right: 134px;">100</h3>
-        </div>
-    </div>
-<div class="tamstorebutton" onclick="window.open('https://store.tamgame.com/tr/urun/aug-a3-aze', '_blank')">TAM STORE</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-      </a>
-    </li>
-	
-	<li>
-      <a class="card">
-        <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjMVaL1GXeEP4zNTts4WcxWSS3mVQNK6uoU6O5lHLprLEfpjt0uBJPHy1N37qHgqqPDxG7GorkGLNH0f8EshN7oqWB6u7d11lQI9vO_Ra1TqGHRRoSdkdw26Cfu21puQVQbjC2BgB3tpb-dy2ujSmJtxGit15Nx-II4g00Scxz_9FSUkP-48h4HDam/s442/Aug_TR.png')"></div>
-        <div class="content">
-          <div class="card__title">AUG A3 Türkiye</div>
-		  <div class="card__info">Taaruz Tüfeği</div>
-          <div class="card__snippet">AUG A3 Türkiye, Türk Bayrağı simgesi ve renkleri ile desenlendirilmiştir.</div>
-        </div>
-		<button id="modal-btn" style="cursor: pointer;" onclick="openModal(3)">Detaylı Bilgi</button>
-  <div id="my-modal-3" class="modal">
-  <div class="modal-content">
-  <button class="close" onclick="closeModal()" style="background-color: transparent; border: none;">×</button>
-  <div class="modal-body" style="background: url('https://th.bing.com/th/id/R.1959527fef47e3ce56cae4c4ad11303d?rik=1wVaRyC5ANbfuA&pid=ImgRaw&r=0') no-repeat center / cover;">
-	  <div class="ortala">
-    <div class="popupkont">
-  <div class="image-div">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjMVaL1GXeEP4zNTts4WcxWSS3mVQNK6uoU6O5lHLprLEfpjt0uBJPHy1N37qHgqqPDxG7GorkGLNH0f8EshN7oqWB6u7d11lQI9vO_Ra1TqGHRRoSdkdw26Cfu21puQVQbjC2BgB3tpb-dy2ujSmJtxGit15Nx-II4g00Scxz_9FSUkP-48h4HDam/s442/Aug_TR.png" alt="Resim" width="442" height="442">
-  </div>
-  <div class="text-div">
-    <div class="subdata">
-    <h2>AUG A3 Türkiye</h2>
-    <p class="subtext">Taaruz Tüfeği</p>
-		<hr>
-    </div>
-    <div class="skillbar">
-        <div class="flex">
-            <div class="right-align">
-        <h2>Hasar</h2>
-    </div>
-            <div class="bar">
-                <div style="width: 26%; height: 10px; background: white;"></div>
-            </div>
-            <h3>26</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Seri Atış</h2>
-            <div class="bar">
-                <div style="width: 92%; height: 10px; background: white;"></div>
-            </div>
-            <h3>92</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Kontrol</h2>
-            <div class="bar">
-                <div style="width: 48%; height: 10px; background: white;"></div>
-            </div>
-            <h3>48</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Hareket Hızı</h2>
-            <div class="bar">
-                <div style="width: 84%; height: 10px; background: white;"></div>
-            </div>
-            <h3>84</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Dikey Tepme</h2>
-            <div class="bar">
-                <div style="width: 57%; height: 10px; background: white;"></div>
-            </div>
-            <h3>57</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Yatay Tepme</h2>
-            <div class="bar">
-                <div style="width: 48%; height: 10px; background: white;"></div>
-            </div>
-            <h3>48</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Mermi Sayısı</h2>
-            <h3 style="margin-right: 125px;">45/225</h3>
-        </div>
-  
-  <div class="flex">
-            <h2>Menzil</h2>
-            <h3 style="margin-right: 134px;">100</h3>
-        </div>
-    </div>
-<div class="tamstorebutton" onclick="window.open('https://store.tamgame.com/tr/urun/aug-a3-türkiye', '_blank')">TAM STORE</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-      </a>
-    </li>
-  </section>
-</ul>
-<div class="konteyner">
   <div class="cizgi"></div>
-  <div class="icerik">
-    <div class="oyunici">
-	<br><br>
-      <p style="color: grey;">Bu sitenin TAM Game ile bağlantısı yoktur.<br><font style="font-weight: bold;">Kasım 2020</font> tarihinde oluşturulmuştur.</p>
-    </div>
-    <div class="oyunici">
-      <h1 style="margin-top: 43px; margin-right: 10px;">PB Discord</h1>
-      <p style="color: white;">discord.gg/pointblanktam</p>
+  <div class="searchB">
+    <input type="text" id="ara" class="searchBar" onkeyup="arama()" placeholder="Ara...">
+  </div>
+  <div class="sonucyok"></div>
+  <div class="button-container">
+    <button id="button1" class="active" onclick="showCard('kart1', 'button1')">Maske/Kask/Bere</button>
+    <button id="button2" onclick="showCard('kart2', 'button2')">Kasa/Set</button>
+    <button id="button3" onclick="showCard('kart3', 'button3')">Silahlar</button>
+  </div>
+
+  <!--- KART1 --->
+
+  <ul id="kart1">
+    <section class="cards">
+      <li style="list-style-type:none;">
+        <a class="card card__gradient">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFSkw8LZrwM181BqrPTDmWW5cP0OOrRh7JcnMPL7pOpAZia5iGvmUhCSGq-o5C9BOkkQZIK9t71MJGy2-xseJ0v0oNPNxNlMFhcnknXx0aIT1B4U_lpRzsOPngXC4B7_uAkeM6iG8Fo3jlnXyvqEgLs7CzSCZEabmPW4UCp5GtlQSkiMEh1hYYwi79/s442/kirmizi_uzayli.png')"></div>
+          <div class="content">
+            <div class="card__title">Kırmızı Uzaylı Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Delme Gücü ↑ <br> İsabet ↑</div>
+          </div>
+          <div class="rareitem">POPÜLER</div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card card__gradient">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMprUyYhQrl4N-4o4fmCbbmB9kHpZScVxkBVOoFn_UE5YkOTPFrFSITtyYLrc1O7mixAqRRMa5QAToLlThOAUB4Imzu3js_Q4A_joxWKY798xD5liIEKKJP-EgTnpsc8tjJKosGjrN2nHSX_oS6G65OR0sKEzhC0CWA0PHNUQYgVCuDqnyogp2L5-a/s442/kurukafa.png')"></div>
+          <div class="content">
+            <div class="card__title">Kuru Kafa Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div>
+          </div>
+          <div class="rareitem">POPÜLER</div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card card__gradient">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRiNmHgOVFSnU0Hck7dOqmpZf2v_4qlFx23H48nfQ8qo9U0pzeQtqzISLyQhPjRN3Vg6rIoAEpodtM9-L6V3MAN1pCuC8PfF6ySb-C4YYl9usCfEZ1DE1L0_3PHC95oVeTwnIzQp2Ki4Ug7shX2kD24UOz1Tv7GgjtOv-WvNc5fHzIqRxgkn8unmKm/s442/mavi_uzayli.png')"></div>
+          <div class="content">
+            <div class="card__title">Mavi Uzaylı Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Delme Gücü ↑ <br> İsabet ↑</div>
+          </div>
+          <div class="rareitem">POPÜLER</div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg97PAzTbIf_r9P92dW8sMUZcakpPZh7GwGrgMF5RYYJ4y5GimKjbBHlmkLcxdXUVIdK-gfU7nfVmJZtCKGoVd7uoz6JUwMxuA_VhN4qkSSb6rfmbiSofECLvaUvZ1b6hKrTVyInKbFk0IiBqp8Sga87U2LFIgq3pJzwQpsxV90Wpb2xmsTSlgrd3lp/s442/9.yil_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">9. Yıl Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_Pf3cbOvhUpYo4i1PdXXHwrhZ2RKkHaUlUzVLoMPRhxRe30bCmU7RVZz4zv2EHnjlOZQjmay54O21WgUOPFVGpFZqJwuD3aohzFDHjBFiay0ce6_SiH24ln-M-YjIDL9rAls8lsxJmcxnns5D1J8ck-q5-ZVf88RG6wQosCpvbU2tRHfWjfwJS5yI/s442/acrylic_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Acrylic Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhq260AEv__-7xVLLN2f5cq3w3-NYyGA_Vg6QehZPMyc7bAGO4P2Ik7cd0_LpyT2p2O_L8U_8vvzpFku2xO4Im-cCR9qllAuYdqbCgcM0sAyUa6na33Rwc_VZVmNt_epcQnjU_DcAVmBPY0caM2Sp8EYH1DnvgBcMdNgAwTXEwxXrYKrRdVoxjBFuwG/s442/ahsap2_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Ahşap 2 Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw-3dwx1FXI90nQTnWWNC-Oe6BgFxzTgusR42w6lYPDjCvQe11OlkuH4NmJ1_LrsS58pSOmosotBeDYWRrFKBm9LQW5cs2oydvZTOSxTOuFRLFBW7w6p39DwosiNMiaV2zGmMeepbAoViWMMckzn-SNlESnsOXRSKra103ONo1wTFhgdffwKjJAWj-/s442/ahsap2_pre_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Ahşap 2 Premium Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikbwQwyD4U6wDDWd5KufQfBlVCeG9F4JwJ-W3tp3LKzMSzbl08SdoQQ9K2-qmSymuTGmYfmUFdtIbNY1cc1QDJh0ZwBiTB1-TlAMJX5pSJMo_D4A8RnXzDfbE-HJO5lcBTIqlSzN32HKfJtPHVB1NLmKkIOf8ru0dy4vSWHOYtVqozPMT3StiGVMpe/s442/alacakaranlik_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Alacakaranlık Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinUMp2j5yjYEMpOiQqwo-ZAxHnt5iB-zNHUDKhCjUghxMH8oCQrJVJcYToBCw8K3zOlDkaws8_bMi21Tge9gATSqXnELLwiQgYoRM2JF_2q8t7uWUCjqSiSZWK7ouQp1uiw9CjfO2XzYEU-8SzFEc_E8JSWbIbDxxtProMY9cxMrwLnxcgvhuWgsxg/s442/alev_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Alev Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Delme Gücü ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_3oOmdvK4NxqRYnQ2TMaTDx1gOmksDy2s94Lnd5UCY12nBBSTfPzqfwWGj1s7WCtG52LbkW3lu8pcgY7MQdv_7fxpSH50bbQdOA5NJ3skDL24tgzjq_RRyNOX4COzVbRwu-DDl63umHCg0x5Q4gCp7DelThUiPiNFFNk59JRwx9Ycr7ilOwnLVFpL/s442/altin_mistik_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Altın Mistik Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYIeeFgpOA4uS9qtxeyngSLk18TbH3sLxqSf-FdR79i_NZAXlrjkl1qe0p8Ng-h7qWvm4CaoLi29xcef5NjwUYB7-rqybxIWyhZLjo2-29ah2D9jgf5HmCrjVDWCCHaM0CccvJ--tPL6Gs37izsT_Ip16gb_76Uj1EBI5OgWyc7xNnmGiEoagRrgnr/s442/altin_orumcek_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Altın Örümcek Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Savunma ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ60F13xYFjZOMGQazC1-_1uZ66ZeMzejd76WOw2oy0JWuJ2FsFQAiNy-cUYa2_yh_6kONZe-Ujnc6BB-ePjmAe9MooQoYSN-hIXTm2rTd763KjGT4MhcTqhCkeDQQTi1R0QS9vHz2KDw074VCIW9gyPt9uzfBapeyFYyBUMuWCfnqApjvraAfLpGY/s442/atari_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Atari Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil39KAeuEGreRHIl2yAkbbnP91ESsVQDMWHYQBudNoLn26fyBfLJo28FgbhrUgVEk-dPs2KaD_Io1_aS4XNuNL5qX_PAXfFC2UCnuII_nTcA30lpikVOJqgueVkTUudseTl8yqp_61ptgmRDUq_Xdp4FTpsJJZdPfM00e5z8vO_6f9O9k7TomemGmU/s442/aze.png')"></div>
+          <div class="content">
+            <div class="card__title">AZE Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghQUEsFKLNenbWu8g7z83NqW0DBmFaJzWbneIWjm2iAVF6Q4oSh4KAsx3VqFpYrAJYAoUWNBYzJg9E94d6RKG77ylt9VR-CRl6aQZrIN2yBYwdYfrKT8iYsUks2k1JNsGIRA_f5UXEpqvg1N6FCfVX__BS3jmv_hOeWEHQ8F_DhyrCtlvzFuIt44EY/s442/balkabagi_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Balkabağı Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Delme Gücü ↑ <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiKBPd9gSUnvZU92AcB8cI3Erm3FdSoUew5CF4AyUysCrRHn0DxZhf-hmBpQxl4rRTjyM_1OoLvFf_skRjAZtKff2gqkbacLyeflMb38InKx7FvpwOshNNcz9XRtejFFPxcU6luG9MN32Hrk1Tx2rJkCIDC9rTaq-lmTsceQi-T92DI3pKiFR-qRuh/s442/buz_mavisi_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Buz Mavisi Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGUJY1gupNDLgtnAHsh_TZMLCiV7xpYsofEycL9_CdSuZY6A6O73dtym8jfPs9DN-bR1CMu9rwTTUykEhkhR9s7Agds0krVJWb8-q7Tr1K9oQhJ5TwbA268jQGE8OQ6Kw7L6sTMtgZ81FxWWWP44s9CLkVsjpcEMYB9c4-acyItnwRSpFE1Gn_aUzO/s442/cadi_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Cadı Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiziCnJ7ZFHZE_JRp34FCIOdNbdbdGsvbhshwNVhIxf1BnDIujIz_1tccAuNDGLa4gXdGg8DHuetWHFoMUWnMZ3W-95xShxDmcHGzZgGbXgTZcd65mACWGYw76ywNhte7sO9zp-kvaNa0Sau01NxLbOSwiDqE0iP8qqPihCq19cMQrgHiSIlWd34gGp/s442/chicken_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Chicken Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjMDYeJ54YfA-jHxRT_UZIvDNnPYjBl81HaGoFezAgfBVygrnA6nXRCgJMqZfGYdArmogLrtPuG4yQU5rDTcG9UYa8_ZQHuE4CAcvctBiK6ToP2ZM5jN2qsoKSTdZb0-Jn71IEbCyf41ZGoDuChX19Y15oCObzShiilZLufGMuHGO9JtuZuu1puP_J/s442/crimson_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Crimson Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYrw13DLlNfnX_GZsypO4Cx5_6gVlygwZn49WUdwGRPn52ZjrP1BbSkDfEksRAQjz6ef_oohr_PUeSUnnbPLDlb0c3YDHI8dNQyUCSAUslmyLXQTpWgR3r9RB7G3ChPnNPnEXSyZpQ26WzpBvA86dw_8aEbXGP00vLeszzosmto7e_7elJGqmKpflO/s442/demon_hunter_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Demon Hunter Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Savunma ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhorNuXYS4c6m3CqzZM2FNNJekoxi1F0BO0iuEms__0yKpSN_sOtS-Cr1-XLLs7gPNp_Y-XbAOb7HFbIK3YBhCHH9rp72hdkhqD4ERbea6V3vFstSkXY3edQDhdpELsm0HwmHvMvjBPAX061P0K3IQFDtpiogVyu9WRkfNSiK1hXi0zDYmAL8c9xm8B/s442/deri.png')"></div>
+          <div class="content">
+            <div class="card__title">Deri Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Delme Gücü ↑ <br> İsabet ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi52A122bNJ1xPXl3MMmejipGXCvryb_ac_Pst2gZw1VMAFjz1mGs_J86kI2c18PT0St8V5aKgSdM0OXteIa5tOGiO0tx0J8nk1Sfv76M7dgZsx4X49fLAUXrVDe__AQ_G80o6ctwueqm45yLFK7Bv86fgTEdJGJx3gSlIttVMBOXBq0BoIK77Vlr7t/s442/digital_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Digital Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9INj6J9C_LfC9-tja_voIvTNOotW4F-HEN_0Gzgvj3Mws1hOs5sIoXKh6gSReTIZLkrlOfEB8GQlETQF-mkAMM-tdbwqExYYXQTWumnMJzfDJkdZnMvnYaErsJBYtap0DXlOVHGDac4Ltwo-yveLyXFop5kjHqxCQ1x3Wp44QNc8AqW81kgz75Zi3/s442/dino.png')"></div>
+          <div class="content">
+            <div class="card__title">Dino Kafatası Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> İsabet ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihtMmhHUhlqoNw4CzYOzTEA2p44KJ7ZPbx1DcYpAfh5kwQ8aVrCNnUDtRYagcSG9FhPzrW9hmfnLzv3r1GsRmE-013c-1RQb3ycm8SUPurRNt6mrWWp_jvj4bgDUDSNe-qbjqidvMFK8jV3FttQ_4WDvLQYBLb0e-dd3fg9DJ4B8dujgUqi32eYEE3/s442/dk2014_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">DK 2014 Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEuqmMVKzBDD_wXztUENhr_PM8G21Xnu8DIORFdP7DiOIdlVvAouAGyAe3ynoCJTtB-52IdP0K11WhOgpDy0PUus-0i7WtIRy3RDjJcvBlEHkd8wuvAClUBuY9dxIxx490M_KlmCTpo0bCvrbkv9iKAimgahN2IBFpACXmyzGyuuywBAqIB1ZNnSca/s442/engerek_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Engerek Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgODjcV44M7JruQb82hin3OcQqcMXfz8P7nCApLUMZqCv7GHhKLEFluWjWmSiUjqpVAd6HY65VmFsp1DuhX-l7TeKAiAdnYmNB9XQX1oGu3uW0UlH0V2ROZgG_J7tzypDyRVArHpbr3bYiGDGKL_4wedlLa8s6hAyFZBYtEPXy_fiyKCOjQHk7-vVMl/s442/es2_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">ES-2 Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjc6UuFP1SrlkvwUe3LlFYJIn9Ub1mkOBTUYGXEtHZ87zgKFixsrftE9J6k6RLpAeC6lFnySRoEq6QpNg_EglegQX70PVFZBwNazHEbASeLwCXrcvRDQ2nJIYHUJHJv0DoCec4wrUe2Q-GozFWgNCDzUFNhHdk88IPdtkw0XkQxhyRNALpjkHUhR2td/s442/fes_sapkasi.png')"></div>
+          <div class="content">
+            <div class="card__title">Fes</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> İsabet ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhCkoI77TrwZPaKhqKKRWxBkL_qZF1Q82LkYpuenNhCkjgAdCLzWTNR4RvZuUEkVPi81ZpW59T8B7oY-xQ1uQPaUk42bZisKe53JNN8v4S9MuEoxrU6DQTUEuaf4Qa16iv24DGnNeWFOoY_fha1pyFafI0nf3LgL54wW8T3Bx9AhnfYDDLSmf_Sz_h/s442/flas_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Flaş Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvS7qSa4UpjdD0_QMPnxhTn4NwGCjTxOu5-0psQ7l8hAZv9OmiAbFYBV3OSwhphAQvcQgmWeX_uufmsLEeS8mbPS4NI1FMa7VjstqTVXbqgeiQ5bgVmwxnHuV6vM91UIfUIKmmoQuhqxA_IOjMjE1uDhFy6AA-0CVWAhQQV2B487mwDrnl6Obpy87Z/s442/gls.png')"></div>
+          <div class="content">
+            <div class="card__title">GLS Maskesi</div>
+            <div class="card__snippet">Kask Koruması :<font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUxH0U-SgNgabr3FTd4oL9t6TqZtwbGlYFvWP1gCCQ67MSs1-GBduM95WZwN7M3DA_vK78ZJ7b1eGxJRudOChbR0BGHy08iTZHVIAC6NlNG1sqT5eaD46WHEdPJEXd5pPLWoW95_JX5FNmJeEZrNv5aKqiG2q6N0sSN6F4fdoQQSaUecFtLQ-RkcDN/s442/graffiti.png')"></div>
+          <div class="content">
+            <div class="card__title">Graffiti Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> İsabet ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh47BDptrPSz3bX2wfe8obQeqfEhqJV5SWXsDIoJvJ3KpjummVO5edJYDt_Y6oZjrs8Kap2zDQu4U5CL0kwY1cPQOgPSEN1UoyBp67EM4eyCc5KAc1gPF2FpwC6IjTZ_qzDd9NnaIxlHBvmxi7NWSX4Xfk_X_qxTDyA1-i2RapqMwIebJErKbYpBqov/s442/grs_v_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">GRS V Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUBOkDN1b85uMPeAvRBc8MyNLsEDfIOxfPskkz46EK_my_wHbMi731Z9Hesf591qPSC7TYPd8KoZOK1BuBBmaydlP9MhtIWHZxbiPphw-XpwEt-a6DOh6Xb3eddwLabW8bwatqVRYwPh2O9QIHRG3qbrqQdLJfTMzdmPhTw3vv0I-uTtXSWfMNb_ZL/s442/gulen_adam_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Gülen Adam Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+</font> <br> Delme Gücü ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEju_kcBsBVmGGi1Tmwz_VzVFaghOAwreZk1e4qjXdDNe-RI5i0QJ2AcjtMjcwsqsGqaGK43juHPNbgE2-sRoavKGGGjwzF4OmoVOU0rW20pShc3P9ZUb4SlWCEP3HPML_DFqMf_XJTMl0kc7OH8leeWfkyvKFLQwSiDvZO33UaU2uAoVbAPJTxAYrvf/s442/guleryuz_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Güleryüz Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3DUnfzddl_zYqtz6zBBL-SdIPFbTyyA7yl1BU8mDIqDZiTbCVLkRlMJL_etOUwd3R6lDwthyVN30tK9bRyTgRmkVEWlgNOfadLQlR8o1hpaCo4ZTEJ_pwpeQDhi1UrUgbUj-ETPZt-iuTvEv1puB_6xgjwutTZJBtH2joYyc8dOZ_JCpbgNL36A_d/s442/gunzeed_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">GunZeeD Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnsscz0-DRfqpWh4rqNPNPaSJGQWgyXgBXZ8ffuk1jXizRhs0mfkWAaOy3kvVIKf-pAqCqbGTD0-UOlYaT9jrGYHe4ACDmsl-ssnxbdnfZP2qF4tICkgTOZ1v9TfIJLf0umi8ZK60V5Xf0L0FgJak8ELNdQ0cSHjZBe-IV3RX2Q_nXWTOazVJxHI54/s442/hero.png')"></div>
+          <div class="content">
+            <div class="card__title">Hero Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBKL2QoOBeA650EYCIsgINk1JOHmxQGDlVoU8xLLbUOJHbX2SRH-YAgoBVzlfkxCjfN9UwBm-fpGrYoO4-GcXgNd29o1Hfml2KmNFw8ZoRxwT47w_wOYtH7GFNXHv6Uf9Q8pQdJ3f2GLzCdF3mkyi0D5SXaWD00EvVH9plji2OA3QckNjXJwOmi2aQ/s201/Screenshot_6.png')"></div>
+          <div class="content">
+            <div class="card__title">Hungul2019 Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWQcB26eWsV7uBhrSxwo3jJYva9ZFKgsrQMIikkEadx2mdWmHMdW3kvd9XguNjEPhYUgeek7T0gobpFRdkrdlELCtzifgn4Lzhiv8c1dy5Ij4g-eIs3yh_D109tQDkkzQF1roPAB7GmAVFOwb0f78gM81Y4_EDoHWigWDVvhgwhSDucZf4WML7Pch0/s442/ice_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Ice Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOHt8tIiZOLWU3gtqxMkUWIGks_Y6w2aWoOLOXx99naeRkBF6d5cG2JekxRHqLSLiZSahySERK0MsCgkCpoJyY9I_NVbFgvxmMN-CNiSU0XUaRKXVTil_sUXYDgLb5kX7wrg4QoYPaGsZKIMBpw4_nEjRyWReF8L9Et_TOYnytUjKoIRDZKwrQvTvy/s442/iskelet_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">İskelet Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-JHXYneXxVXfX4o5WNh_Q44adpEYu0xtBwsoiw4fZ0jwozhD_MriPaVSW1c8x92acnOIOuxMW6_CC6qnvPA6BoZrKrkAsFrHqooS3XlgRPQ1Vu8YAvubu_iK8j8B2VVbL9pEg5m9cYa0uMX9sr6MNOnRzrRGTI5hJInAw_gc2h5TjEgpImeFqkKZK/s442/jason.png')"></div>
+          <div class="content">
+            <div class="card__title">Jason Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> İsabet ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU7UwUDJPPHxkySCMVlqusB_A0GQBXcdbRkpVRU5SHP3EBdU5S8MEgEJ3q-eGzGG6W2CyeJzHvnEleGxNhWZ7npEXLuKsctmPSnClEVS-qhg7Jj6_ZfCr16N5Ff0SMsN_uQLv-6d5RrscnSmC3GMLXUnUZTRKnEhwZua598k8ntkiqQVi7cmVGgkzY/s442/kaplan.png')"></div>
+          <div class="content">
+            <div class="card__title">Kaplan Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Delme Gücü ↑ <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY3ZFwh_cR4xLDkAH_c-1ALXbIGLMrjgIU2XGauO8E5giWJJgA8EsZBAHEHvj0so2XHJ7UIc2ie9aIgYgdy0uliGzncIjclwKDYa-yoHURmEgq5qU77Fju866ayI4v7kK_1L1Iv2wcW1qpFgTT4ou-d77RdU3tehlCbGdJTmWxTJweCMSBKg4GGXQh/s442/PiratesRed.png')"></div>
+          <div class="content">
+            <div class="card__title">Kırmızı Korsan Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Hasar ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhogfdudu6kMClTrZBVx2FsHVBp9jdWvLyza93NIEily_MJ57m7KwoT8QjuE_w26m73KayDfe2IbsErYvra4vzMG0TWq_-YCSusczyxmmkHawpfhE7Kz-XuoQAvG4twqtAo7FzQEAkFHDg7tXGXbHJb9TeLAS3bGP7myDHbjYcN-nDhMbCk8YPtHR49/s442/kirmizi_seytan.png')"></div>
+          <div class="content">
+            <div class="card__title">Kırmızı Şeytan Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Delme Gücü ↑ <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbWYLXcorgaRt6spGx7XmH3PTQLAqDbjzpVhAKsCM46UzJ7WabmkJvLLvo3nMdrL_nmmnKFlYUNOStb-NWQqlNlSURU6G-I1O6llUH9aXCCByo7H1cAM02jQrwgJyq_v6iPiSi-2G7XdmW3xtsGag8FdlILoJ7s6V2knO75B4yniIACQKg68232Vyl/s442/kizgin_adam_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Kızgın Adam Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+</font> <br> Delme Gücü ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLcxOehfQ2TxI9kqmCLj-nEWUpgBm9Jd58z-OBpbaEmn4YCOcP90SGhv2qh-5CBa8fViFtHeozmvaXTwqbz-z2DJGbPQLp4ddWPPhyUynftHTFKj1XOpx25AWUoNKHtYI1MnRWiLJHc7bdkEW54kMGZ0pnvzvzSOwpMtKHRl95MiUdF8_qKuMe0wEq/s442/kizil_hac_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Kızıl Haç Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Hasar 5%</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjzBdx0jlRJc-diNO3J_BIK7hY-P05sAWAp007aNgWqWt6noXyBKdoesRP5WxB-ofSRAU-SsIHczpZ2XLiLoEkpTAEroPPufSANdxQpfAa33Hv6sB4G8lSvePrNBR-MUtPqkjq-q5QtSIA7LEw6UjO3iy-q2khwZchTtjauVeUNj_k7kPC7NCmW7R6/s442/komodo_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Komodo Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLpnBo3XvM6yNIdB9ra_RR26MYOZ9Uo95kqZUibTwOyHdzWgN9D5WIgXpc0-z-OAs26wr9udAOJoCjoeGik66xUb8F8SS-LPLzPCTtb5BBVGkKaLeZUeBk2nCCflJDvRC2DjdpY4i-8AiyVjwSEJNpKCfe6c8xYadvq7n8-KpYM0KlRs0n7i-tpJXD/s442/madness_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Madness Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNSpaq49Cs6SABxel9Nr0WoZfgPwPQ_xQlOycJzNDytj2vTbsqaTVAvBqSs7Q3r4gN-bCl9Svxpb0o91DxrsydCxUbTbCrMXDkuiAmGVL1C5Z-lyx3ZmXvBGQHveBZmUsxqJPsvSU7ycqHpyHYO5VQIq3lOka0aUBWq9L_xII_agZ0fNozm0h2buwX/s442/PiratesBlue.png')"></div>
+          <div class="content">
+            <div class="card__title">Mavi Korsan Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Hasar ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGhF9wzFhtxoMU9D0UTl2q6CFM0YV2xFm9CVbRXNMXXSs9LBJ8I7rR6WYbgDziz_2zLWUTVxFO4jI-dTp5CL4ixebeg5wf6zLxZC3taBblyWAzFAYFtlCJIBysl2bwvhkxbHu9QLZfSeRvkleZPiQAnGJAPmioSaQZ-0w-NiapP1BiPGDMxgKYcUNz/s442/mech_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Mech Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdRQs6oql6c2Ld5vPlgar16Uk1fonZwBuaP-dtPpgZBAlcGT4DT7D8TOgglbNeMytq4bAsHXh90CYbRY_FOXrN8iJZj0HzfwvX_5T9eUIC6kLXT_yRRwLbpXRvXXtd_AdVQ7LwRNEJVVWBBs0MliIgNob62QYpfvip4QZn92T0WGu8rsYLPcFZ7W7X/s442/midnight_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Midnight Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdf28sKPeawPE_UGBCaJOLhK2ZaqTTesa8mSfADSjzn8L-Qmh7VxbaCy6QGmOgK01xIAYOGPM-aFp2x2emBonj6tcQKyV4hBBbxnIEF-y9vRd6SYz2S27KoOC-YrpaDYCgg7Qbws8CIgJ81HJFtp9gYUi-l8a4HJmgqfq04dZe_snzf-NsLcC7rMYl/s204/Screenshot_8.png')"></div>
+          <div class="content">
+            <div class="card__title">Mor Ötesi Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjybVjn0gXRpK5ih6n0sEE3XKx1wm3LofTa8gRG96v1P_NiADQSp-LI66HdeEWpY79eokfBhzREHW11vRQAgEQ8dsft-JR-v-3-eLfW_qy1hdPbewnW-DqkWLe8eQFvOE10jhYP1kj33zAwSuqaqGGUHjrvXllT8HCawX5MnSthboBY5Fc-BNrqVoOG/s442/msf_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">MSF Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkG62KNkpwnpjdKe7Z-ZYJcNYP8RaAXpzJ4mhmbC7hrftKR1X788EvEb4MrJa5ltSmhcM1YeeezQjB49YZstB6QY31iN-N4qDRsgt9GEZMemsN87aj64CQi-FfkG7Kfur9e1wgZEgAIEwEGa3sxg-KGfiuOW9VQ42rBuSVg4XxwsHF7lE3-1CNLIYN/s442/mucevher_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Mücevher Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> İsabet ↑ <br> Delme Gücü ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAHI_Ag43w0kMZnb5BN-NfugYva-3ipemiC6yNta8lC38mqjV43W4ASTlpDKnrdnXFxcCAk6KBNyZ_0hN9076x7maxTfCAIR_d02--tPEP1Zdk1Ge_pmnR188uVDB_a_9c66T-i2WjQH_W_i5vuATKVkjA7ppdkfnz4uXSI8_cuxfL9whO0OTM1gzt/s201/Screenshot_9.png')"></div>
+          <div class="content">
+            <div class="card__title">Naga Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLhcKKdxM1UvPTY07vO_Ms0aJombV3XD5ZjDcGj6s85ykh31bgg908X6iL9xen4FsIzwpXGmBRtKXA1cBXtp0tuRDbmtg7FH5UUtpXO1J7ozatxUfBlUjRbC7fmrAYKC3LSQnuvepG242EgH8gDEUvMga26FZ5t_3iimaTnXDqj43oauf5uy7wod4Q/s202/Screenshot_10.png')"></div>
+          <div class="content">
+            <div class="card__title">Nitelikli Black Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4aEc-ng8H50lkuoR6NjL1psmTXJt1lCPc2l9NqMTk5kUXAngqm3X-FRGne7rxHokNnBNjXzpE4XI1CImUnk4oi5DHRIRSd8WNR70-2tcz_g91MO_K0IHSyDH3gQ-mB0YDyszRf8X21laMVk1QRp0SRI3GoHk2D57Viu9RqLespUFiV80xiop_kfiT/s442/noel_baba_sapkasi.png')"></div>
+          <div class="content">
+            <div class="card__title">Noel Baba Şapkası</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8AwwCSc1IAUauKpbxlkjXET30iWaG6H_G9uyfsztHWsZBGr72dudErg6JVhI2bTS6_JRU_DQZZ85NIEtIgVZwSxxKSgKIU1ne_GoO9lJ6tRjf0nr9zK_RWJ-_L0-MDNYg_mNLsib_7l3vChgIYJED41T_Y1exyqHVXWL2ZQl-saPSYuCVyn4Elk1j/s203/Screenshot_11.png')"></div>
+          <div class="content">
+            <div class="card__title">Nova Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGyE2hSnn1JegmxY_GQKc83wU4duhTaqH2EImxlbRDC20Pf-6QQrLqDUBg1c0_fdXBBkLEa59TH7hw8UGK_AGIPTMraSmYECj9b9ikpqZl3lqfBbF03-lGjK5NHF8ILWi39yf-84dzc77qg3JPIGJVXPAK_msG_nkoqVtT3P-GO4fMp-K39PX4VyZz/s442/nusantara_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Nusantara Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5lDcodrZNY2CJoBra59CLOT7R-Ug7tBH-VtddJn4tEvr6PMRNScCaGs67510VQDIGpwXHmhKNkAM84WKXn3Dp0et-3IVhMD25GRiI6DlQpKT6Io6ua8L8Ulu4Divp5-zXWJjNW7wyyv45vK8j6E_n2eC-E1sTrSKP7ozsyz4I1EmjUIQATnbOTy7H/s442/obsidian.png')"></div>
+          <div class="content">
+            <div class="card__title">Obsidyen Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidSCxcCYni8oJPm_0s1hYZqPVfV-MPSZEQZCtj0ssMleJn01VEmMWoHIZoPm73PA5lK8yNw5ZSY6_75_6zOxapfE1RR0kPB8Ak_7f4MIn-L5eXC1Xmj_sKYdvD4yRUkOLbn9U9JRhyyHJN_jOm6334RyDnODtnhdkbhF7wwg-7b2Q3pFlGSoIn-rb4/s442/olum_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Ölüm Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmEGQbcfNpIANSNPxOtqzeCM25-wNqEcxArCeFvLpEqMxIJ3oGcQ53Wt7h79T8BZk_daw-yObiAqjgLnRX5drdlyqY7IjT27p8hREfsddWHUd9m6b2EQpApTyYq3GDnYg4AUVU-HlHiqTzAQxH71UIREMOh7xDpKw7jwjBz_j4eQmlaijrrStToPlF/s442/olumsuz_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Ölümsüz Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTZBfPZFNLHKG40oLf6BxpnOd6P6k_urCNQVWUc3qyz7W2gn_tmBaAvmB4oa4Wld3v4Uvmqh0BUagPNe4UtEpKKs0ylttteEZcnFv70UGXiRCm_dfUx0Rq0fZ-Z3Pm1U8wObCrRhMEPfRwE2uuFgDEkOzHKhgUYsJRI7KHRidNzcn2FqBn_qM1hQAS/s442/pandora_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Pandora Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDKRRPX-Qdl4h_-PoYpEc_C1NerttRACwJX8x8cQUNx-JlZ8GNgbCc_pscgPURI4j-odTCHqkUivurTW98JPCiAsMo1Ev1GmxUuZyaHZ8tzL8BUK2xV-W0ei6dOKygHhEfPXYp8QCOmezz76-U7b95opXJOjY5vJVKS_nl9YJctM5J4RwvU8KVPhkB/s442/pastel_mistik.png')"></div>
+          <div class="content">
+            <div class="card__title">Pastel Mistik Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiT5oZACjL3esRm4muehdvI-M2SDr-nU9vxchbzHcEf-se4MwrPrgxXiTwA5bjsON_0WMeWLUftZv0ciOyCzeA8TBBYr6dHvzEVZLMdb-2aAFE7mtcmm0XxaA0sdfR2-h3SCVMo5-pXOFTLwzBCSenmXK1c9yCieqCNmE_Tlz5MVpqzNISrA5hAl01n/s442/pbic2014_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">PBIC 2014 Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiW9B8d99QhJhYbo_AQFTV4PTahLtVTFcPe_klM-UR_scHHUezWnzj-fu0_friyucgIloHsFkVHx6DpVr5wkbvQY4b3bBt4lLtwvw-qJtGBlPwRbDFklbIlB_qa7SkYqRMc9N0PAbICMkwx9SZPb6A4c73bDhq0xIzVVpnMtZ8S0T089DJg2yztTSlu/s442/pbic2017_basic.png')"></div>
+          <div class="content">
+            <div class="card__title">PBIC 2017 Basic Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglTt5Go1wwNhwNc-g6sUppo2W4d3qEeE-4uVjupGPjQ5hhc0uq-B4nxez_Zlkqyp6DhyHalAOivT3vElWoaefT46-0mTUg_bsN4cU6EgYG2tShrLK72CwFReKAURHWCL7rVMEYjG2G8Cs3gzLb98LK2x7xv16XzqgJY2TohTUE2VUjzQ9BBJlAIn44/s442/pbic2017_pre.png')"></div>
+          <div class="content">
+            <div class="card__title">PBIC 2017 Premium Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVAf7ftWN5HejHHsWApETz4EG3No7HYmGbdiDHyDBAhWIvwt9OmE6bc7YNKUoeqR7M-9W4Shz9PqkVtxaybCpSGbWu4bjLEpCcQghEGjYet3fY0qp2YCCNF478StfnIDTs9XnOw_J7lWYiyRbZ1MXWHBZ3Dryh7A8WT9BhQ9AZW9SKLMkDX4xJlB12/s442/pbic2012_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">PBIC2012 Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQIhw2fHHAA_AsNNH952ki_spCEFWGLqtbzkP7cqGKKFJrDUUuQztdkBEXmI4m-i2KdtsRIgpfMi07pYQrSo4v5HLJRwzmOgdJQo7GRZDX798S2yYIIi__ka-vCMLHSDKZsbkxslBN_vEkje7ZUJmKeEJUB4_L97DUb8mbexfteM9n7VFAVEMi139W/s442/pbic2013_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">PBIC2013 Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmqYyVf_nDFOzsQiOj8VssELr-QZPmhB-sww7Q4f95UNbgyyIGoVpajfIHBNwfTnT8I3rhHm5AoPzn7Edwd6KZ_crIyhLaWQuSO6qhUU2OYoJjybODFadp7P0JOhVARqfVbPJ8iQQ_qazgZnuerZFXB7awoKxLiR-qw-7siKjowh8-6HfUc3ygl3ZF/s442/pbic2015_basic.png')"></div>
+          <div class="content">
+            <div class="card__title">PBIC2015 Basic Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> İsabet ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVqpapI6T3qZEr75Z10M9apooe7PSAZUPAJiNWMF7HqkVL2yPmMRfY-abIWpwW4AGo5SWwXOV_TEKtUnoYrehX9ZK8s22mqpYU1ZS3JmKurLjxCGsswJ5gYO-YEC1D7iCERMWSo3zRAWXubqgMbPRmo11RrqWZcQT0M2vUE4-kIpIeh7dTRa3TrEKU/s442/pbic2015_pre.png')"></div>
+          <div class="content">
+            <div class="card__title">PBIC2015 Premium Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO8pm1hEM5_s5D6gyQJR2zIrSg4d2B6gdQJfO-mAvnYetLBMFT8dG1hsQZ-nqhL5lGHjFdjP8dCG6vr58pkyvN1l7Zt9j-Lg1IN7hsYJZx2DEwj6k1LN-M1xFP7AXb9GU2V92iKx8jzDH1NpvS_v--SveeoMoMkA37_3XCLHMk0eEjWrGpvinBQ1NA/s442/pbic2016_basic.png')"></div>
+          <div class="content">
+            <div class="card__title">PBIC2016 Basic Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> İsabet ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx1ZspHOnGdktGnwhMSR6DsK_9M_WAvfw0V1HGMq7K7b-53hg-EUdSiE2fo0ON_vL-RRZU0R458Ui3AMSkBItr34WCFLlrwZnWKemkie151msgu_nWDST5SyD667p74TY_mur3tBen9qHU3m0LTG_L9Djv-ObHJBiy3_GpV8GLTUp9xrep6I01Qr82/s442/pbic2016_pre.png')"></div>
+          <div class="content">
+            <div class="card__title">PBIC2016 Premium Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjlLc587Ul4KFqwwNBmyehqTEQ9O8l-wK_JWfLNSjJvzMGSz2ASXkr9AFzDwOvviHvAYIyq0yzp18XXy-G3J6WpwQUSqVy2mSGQG3wEw_1OhnQs8aBTAUEWLK-eqO2OFWqIkcxxPHcSWkxBof4PWpKbJcC8Eq57B3gDFUzU-LLwa_TuhZttGpmfhlM/s442/pbic2018_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">PBIC2018 Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4URpcivz4wphmVcEkXgWUriiAstOsmNpWq7_Cy6w9z419mdQlo_JpO7L274UdDMYZ7Rw2fAIgnGmCqLbxgxvYVvWNtXqXqSin4vHfDrqSgRt8Zj_tpB54Be5JVx-5hW7qtwllFKSf78-5Mc2SGT8Q_f9rxzdkfRItsKfvRa-o6uVlF0KequPLDNZJ/s442/pbiwc2017_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">PBIWC 2017 Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHfSPJXK-pr0PG0XmBLAEy-8YdzFqUwrwDV-mMSgftAHY0DCxKQZg3FWJwa6KBcYOWZYQAmYre6SVGL6-Z0tajmfwDZl562zFEaV8niADMCUBH0d9wnOAxgN_IAYEybwd5KeBtTsYGIPp7zK4Q0DdQel3xHg9Qdl8up5I_8iEpCd5EeNWE5A1fxRV6/s442/pbiwc2019_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">PBIWC2019 Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhO7KsvuXtGCCVnmFbHymoZ6iKpm7dL2g9qfmEthNVYiTD3fkeMImdjeMzUQr_Ox0vWcXo_Mos3yy2ci4vxlaFpFduQxyg0Of6KyoLw1k_nWQy8GDF6QfJlfruKuZ7u-WO-KWJ7NnRF5Bm_VA41AjEt8zHeT2vHfs1lOABQY1cvNhpjoFJWl51UDOMm/s442/pbnc2019_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">PBNC2019 Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWRATd2BXm0kL0XADGJ30JV6B05_Ug8hmH_rHt7lCvoeBlkTDsmORxMyswqK2TvGUo94n5WQf4ov28iVwdY6kuFczYcKvgFbbHk4OpQipdU_TMtA2EOva1w5Y1KlfnTkLq94KPYnewbsu7fzGtSytxlj6W1e-d9tOfUdDtCCEGTDzhLi-s6Bpo4SCV/s442/pbst_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">PBST Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN1-iI10GFZRs5KCcuO_6UlM3CcWWKYjVQznfwziuTl-mJ2C0YYI0i050rZStifKd19x-9h8FMOuQYD2-efBhe2krujgmag_SgrJ-H7cwdidvd7LYPQpz83oBGDyL0BFJVXUWgm3g6RNcNzRR6Dp2UKfVtqyY10uajPhDVV47SMMKz7zT0xokQjlL0/s442/PBST18_Mask.png')"></div>
+          <div class="content">
+            <div class="card__title">PBST-18 Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirHKTC8hzdyQrwIo7WDcNHowFf5VvVbCRXVHzYNZNjAR3o9NOP-zPz2JiydrnR0z23dAKLtvK2z89zMRYtV6vGCLoIaAT9fwy_UMU4YiZ_Hni84DCpG4rS86oYZSASol5m4--MIexHUyNFDHGaeSmQ5uDrGU328fRP1E74VbVUZTFOb9I08VoWFcF8/s442/Screenshot_13.png')"></div>
+          <div class="content">
+            <div class="card__title">PBST-ES Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwNF_9CX45fzBBlH20DOw3jBpUzI3jo2HYW8vfn8-Yg2p5ped_OJ6UbvFO5dhm0yroAp_-Ea9tXRxzvqnoxsFYyHpU8mZVi4TyBeQaCOwV8XCBKIAPTxV02LitoFb9yHGrfCtl9QLSC2RnLJ1UpW-JF9cgGonzEwQrlBEJzyh3Pqo51FdzbBPOeUFG/s442/pbwc2017_basic.png')"></div>
+          <div class="content">
+            <div class="card__title">PBWC2017 Basic Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg60_XGOHMtYLoAk3nD9QSfMY_bDrWp0D8ykPtb7aWZrSPYZQmf_980PpA5uqfU3h5bUCBoXhmMVmKPrVS1Att5tzuZu8imSGloJnzwN7ihKgoymQd7eEl-Oz45KfJ8VgY5oUW1PKmFFL8YF6efpxSZVjdDDx3Tlrpl96EPTWavv5PYtpaMBDRDXn2N/s442/pbwc2017_pre.png')"></div>
+          <div class="content">
+            <div class="card__title">PBWC2017 Premium Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑<br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBuIpmNXwn6LASTPM5xqgsi40Agimq7vVJtgv06Hat7xnwTdNNy8BhYjdIacrK64n3CvoiieJndw7BXlABcoPj-NnU2mpZ_8boS7m0DZILfaaY55fS6lZyRL08aEkoySJ7kVgVwDxZaDnIfpqDdKWVm7nbUDlJ66ykJeHM2svnRHUxA1FYs5ZxIUbI/s442/pbwc18_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">PBWC2018 Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font> <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcQSCLTQ7KnccvqA6JGfOiWI-0LpSXjI8VEX1kHXYaO-Zo0WMkkU9H3uD4pWjwobcWuwqPyko6bN1v10xpt8_XH50_MsILJiZi9nuCLMNZtswHrjtTEK6akUdEWXs0kzC_qMaTjSojlCEQrfNZ7oaYJ7paIzuWO69ft-ldj-ESa2aSpXiZgMChOeRj/s442/pbwc18_pre_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">PBWC2018 Premium Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHNgrDQS4bZPiknBuLPzvzD5VAGY5D0PLkqU11t78raW1VN1jcxNcO8k5x3yExxaHeUjWMe4hcAvfpo2UxYQd4rOMH3jCF8kgCPvBfV3sYKd2zo0iZFea0__XXC0oaqoY4cA47aYSkUsdDRz-n4ihfl84PDaIA3S94ucVHwj0NRstZNRBCiUfASsJ4/s442/pbwc2019_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">PBWC2019 Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSMVw3mHT11Gy3ClWmoKKReMW0XEG9vutwcnX6lI-ITaVcFPHSVCoeGvmFrR15Ge1jCVChphPR_8vPdorwTN5MxuzTb1VqBlqCTtJQG7CG-bjLmN5RiLqh4hHupwTaWrFkws3ibnTD1bZTZfKSHC_d8B074VfNy0stKHSEHbHYwsBYQJRrNFBUeCC6/s442/pembe_mistik_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Pembe Mistik Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Delme Gücü ↑ <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5rWwbZXk8tJwU7e1Vym2yicNazFD-ZgNN8a3JssZdOA81dINTbd0mOaxh-wUGm1MkwMa2UUcq6fCw2OYNqG0CdfaMsdE3jNOmUtxgODh3NvETYaII_SQROPXlYk5HAaIUm0tbZhNo3IQ9ftKUuxcsTm9WQ91p6Z8JCcyzkRGdEin2pGmw80mXzrLe/s442/phantom_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Phantom Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFbnkjlfcs_7xGsmxvB0L-ZJbhP3M194WuArFcMBEwdh4VwTdkuulQgXhi2Rxn765HicOjaU7dZp466NczWV7PbM01byQrblfOjqGFYJFBqHpUvLG1WYopisIYy3zBVegH6BG3tyrhzf8uOwkwtUImagoCUCOEGWC6gCH5CYtN9TO5Q2T1xPiNPymf/s442/pierrot_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Pierrot Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Delme Gücü ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm49u0escpU46GahH-lmmM_NF7uPg8_1hxQCUG8ZsiETsuYfrjaCKQELIWHqndhT0vi1p1PWFC4O9OQWjrmnsE8uTqqtLtRbtWQr1zQtoOdjymnWmA69iRWMQMTdwe9Mm8cAgom3sy39526G7b3Qkj5eW5Ui2kYBAqkuwF5eCMIk62IGzdECDNVGd0/s442/platinyum.png')"></div>
+          <div class="content">
+            <div class="card__title">Platinyum Mistik Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0XUeQpGTD2KyyztpTDjY3hNfDpazuc44bQDJxvy-s-n3wsjfTOYVgS_OaY5dyevWlzaMCcxVhmbtJMYislLuAYNVOd4Uj2m8ffVrXSJQYdZ_s2ITsw87_TrEHZRnPBFrSYDcarjAKbaYPqy2RuEcjnMYZKAdBYMI9JCi3-ecKw53sCD2QX94nNCDJ/s442/punisher_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Punisher Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk5u6LEjLCfvrX2KqVZ3_naHOZ-MCJtd0Hes0dnm8XxaP9VAKA34h_xlYXRjPHIedOoHbmNRNDv3nyQOZbN-k7uoCavXVIE_PrMQ5suTTaJ0FKtili6pWzFsM45Q2Rt4JhPurUlMANsceWJyZwJqZ_Mne9QbDCKBAre1Tr5WPplnASsqc4BI2kD2_2/s442/ramazan_ay_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Ramazan Ay Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAMjUQLnac3Z4Jmoy51b2SWu8hUQy4x7RoHXFHiMee64KI5194TKrD1NOrC5jBHi5pwXeHJzr4u75Fc9ewQqhtocQxCjeiTvGxHCpHAuC8dEBAxYGnjOgJWRQ2uOw19wfoPYGDjhZvdNBon_ehYI_pxgGMVawdLHY1St1Ro5_MEd6brp_BwpYMOa9p/s442/ramazan_yildiz_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Ramazan Yıldız Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Delme Gücü ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHx1PHKgru46LrSeOycgg7xSVT1dkhV-UdU-kA0UkAyfR2ulGurk-QaQZpVpTplSU5UDK6lKsWSUll9MT2NZO5OCOvq6fhVHSCq-qBJ9zCAuA8-FH_9SBKkVC_vzhz1nvnSvCGnW2NyIyDCVlV_abaQgopbRsYmOPP2gyRcISl-vHPt4oYl0aPQMi6/s442/rambo_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Rambo Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipI_gS4zCpc3tPmvafP8ilNuwxkJvLIauv14ZERv8HCigiSMWjwzcS1TGRGBiMN9ZEWlB9lUiHdxKaFmcyLea0hjPVAnkhSuDLpzYxrZ5fGrqzWoTiPnhpUF0QjC62RChbGCvKSsmOOAHWxeWjxE7rwfFssuf76Q309QI8i9oxt7kcXZvBxGYuZdN6/s442/rust_iron_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Rust Iron Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Savunma ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizEblRzF24_rFVS570r4FGgQgNG6NR4QFCMA3idl9CZNs3W0NkrO_eGNT6HQGMCqIRaU8CqMSF1XCwtc9whXSTPyNrt9Xp9ImUY3hbA4BkXRNQqQlCxj3BfxV579IBZZTBX9Kb8MepAb6bNFj07Al-NMYq1mfI2e5HRRxaGc6HNrZqy9eDHGvHgCU8/s442/safari_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Safari Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgO4-zGzbDYXlXOxmGA2I2-mAXx2Lihd4omTDZAJUIC2VGzLmNujkB2EaysKB_fFvcutxnO0xDonbuVx4rqbgrWKvYjrFFZslBWYQaR6cFkL1knPdfEXrWEn0AVR6rWb-rON4bL_xzf1_qFKs96dopoZzqEonvURsEZtv4Xqw3fja6Aq2oX_GC4Ak8T/s442/safir_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Safir Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwA6JFqmtQxDu33ThEZVS22vqdNTjv704dHQoUO9s9AXR8rbGn-n4_cPAqsUtqgUN6-NqoT8XiW0neUmBzV3PVJg4aAGhyE_VOxsTForgVeSgCmK6wEy-yJDjMVnETvTwFIxe4AbwbSUdoyGcWDiRE_oiVwdcuPYbKKFG0lcMCBqZ1ynemFzk7LcZR/s442/safir_pre_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Safir Premium Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiok8NbA9xuKZpu0DdT7DrbeGO6Ixino7Ty4YxAVGEHOSp-bhck6oemzHBbrEJ9tFyFQnAWx6pGvG6P0eOjFA7Mp6AT6Rc9iS3GxmHnU91mNIDRIHXR4aLiJdpAGe0Qxo-huNt4tGNhplsiCQ4FNjvsCc7MuaHiMHRTQc2Ejsmmzzqq2IpBZRJBzYdC/s442/sahoming_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Sahoming Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzT87qhWIWw_9MjjL98DxIULyTd54QG3EAhnrcCli2oIMVKzOvQlIDPvgHNjd7hE_3y9v8vsANi7uhcZfZEXNQOVQSb9lhL76wjajRPIkEbry8JByhmCuOUvs01aBDKaEnODFGm6c6GzQfSf1XDRwNLBTriPTSpafhaUsjthOPuZ3C62xfWVs8bV2l/s442/sampiyonaslan_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Şampiyon Aslan Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1pxaB5KxaZ2DgwEPae3R6PCzzLsac0pdyDZdV_GE9WnItB1DD6eBkhGiLCnuFXZEFhlO4nJidFbHYVPXG3-h4pBOf9IJFUuRfU5tyi9lma27ju-yjHdII-7qOf4yz-KZB73KQtXpoxF28EqiEmIvO0zWDFcmENboSPlVzry5g7Morqy9SM1u4tsLA/s442/samuray_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Samuray Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4MUSnYM5utz0Q6roP9UAoR0uYrAcGkw2WrAHsjzGv-mLrFFX1NS_-CdUp1ru9wy826OQpoY4bY1xhiHNO-dQ_XbT9g9feudfZVMu98jpzwnzgSnqCHLgi1viQ2jBZBrkxmkhX8YkxhyYN91_kclnl0rIQ_DUBzKX82fTE20qK4WjN4nTa8eoVLV1B/s442/saskin_adam_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Şaşkın Adam Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">+</font> <br> Delme Gücü ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfO1c86KQm-kATZJJsimg-VBc1ZD2sPkVvPZOmueMc7_zyPlZ8lmmi8kMMtfW5-8Q8vUoj-eWLj59mCF5zxmwKySTRGpLUWVu6wqr4tCYRYBR8JZjX22JPVkX4mHfCQJ6Pgm8c0Io583mrxW-bVH9SwK-ce3uzfRIfh-Q4ThmU7sB6bqvqjaUn-Ho_/s200/seytan_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Şeytan Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Savunma ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdJDjIfJiVoPHsqpG7hX8LNzgOPu0GubDmfV8AOUXJpEkjmnsM7sBRQ5hqTYOMay5S321694ccUmhAOCjCQSOndlNzF7qrpVKf0FZFYScI5y1f1cOTydX6PRHBv6-G3UGC2QABgcxN-E6HyWxMI0DJJEf7LRfv0BJWgzKkyPBee-od3OgM3EEiBXRb/s442/siyah_kafatasi.png')"></div>
+          <div class="content">
+            <div class="card__title">Siyah Kafatası Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjR2PvnYBxbymQ4oVA2204PU4WX9j8raib1KSEPti3rq79psg8CSp0aFVZWUYSHDayZ1is2BlX1e4CiiaRZu56nuoXTbNsDg6iZUrUnwZX8zV-slsB5FH0ESkbJ4n2KymC0ga_8Qit54bdsus9Z6_BkDA_s1t6DYi9xr5zuJtJdgon2shWD13FbKbgv/s442/tekno_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Tekno Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8BlO_68i2ZvQDZ4jOQ_50adHUcFUuLXHf7Bi1uVAzf6WGfxLMtf4p-M5QWaiOGx6vE_FUteO5U1iIkMPJUV6T2FeU1GxdXGPkQpcx9stcstmPZKGkRGxXM823rzpFoNi3hR_tkXUaEvlZw1PelFrPPv2G-PggOlKiNi31W4xlGfPvJVqjRCZjYs8d/s442/yeni_nesil_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Yeni Nesil Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> İsabet ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaaRV85cCfK6mrKwk3-7mwblrmfR0J7XLL7X5evBCEW-8MlIdxNJJtsttsUjrbqiBS0P7yah9erfkzXkZSYtQRDyybwHPzEU9HyKyOQ19nC78LMVQ_i2Diujk9d2Y0eA3p4eYsqgiif44s7mdq3RJBRm026wWPUeCthif7TJLnYaHvlTFdw2ANACP5/s442/yilan_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Yılan Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++</font>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD6j9kq4rgaxTJd8r7-9dOnOcjmPp3_yFGOmOAP8qUrnebnbs-FPptxiXA_BZtrzOzY8anCk_oqLqOuceR8BCIKxk1xOJRCeKPV8PqscRR9AQ72zVCYsc3rEGntFCtKGk5VWg_uGxjXpUWpvDi8HNGUvfl8Zo0PjDcyrJeThxHQ0q81EktljnIz7w7/s442/yildiz_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Yıldız Maskesi</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Delme Gücü ↑ <br> Kontrol ↑</div>
+          </div>
+        </a>
+      </li>
+      <li style="list-style-type:none;">
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiob4PHYQJhbsTGnoB5LiU71TBwQgQXZ1-hmA7XIiKUkrH-DUoYJtGHdeBL1oBcHzaA4sTAaWsUxmjWdNQn_fRwcLqgMm8CEhh0WBpslMVbPwRHDGx13k9uyZYPjtTmzuCQs-cTQnBcIvc7Heq-Qwx1nMZ4AGwtYJ0ztROxHfrERaUwZfDqoK-TUXw/s442/yildiz_2018_maskesi.png')"></div>
+          <div class="content">
+            <div class="card__title">Yıldız Maskesi 2018</div>
+            <div class="card__snippet">Kask Koruması : <font style="color:red;">++++</font> <br> Hasar ↑ <br> Defans ↑</div>
+          </div>
+        </a>
+      </li>
+    </section>
+  </ul>
+
+  <!--- KART2 --->
+
+  <ul id="kart2" style="display:none;">
+    <section class="cards">
+
+      <li>
+        <a class="cardlong">
+          <div class="card_image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNvpfZTsPetAcC9OJ_xO2klosArKIQFMbwAxLkGiuuwgyyWMZHPI09bj4EdJYIjT6vEsdFVJPIG0TK5P_pjNyM1NMT8OObdwC8FgjJINpepA7pl1cvfz8ulS1oVDbigkXPzgAHbVVgbGKKT2yqgNaLklTPICFGkBOkemAG_UPUQTPqBArmKD7v1YUr/s842/krallar_kasasi.png')"></div>
+          <div class="content">
+            <div class="card_title">Krallar Kasası</div>
+            <div class="card_info">Aşağıdaki ürünlerden 30, 7, 1 günlük birini elde edebilirsiniz.</div>
+            <div class="card_snippet">Aug A3 ES<br>Aug A3 PBIC2013<br>Barrett M82A1 Premium<br>Kriss S.V PBIC 2015<br>Kriss S.V PBST 2017<br>APC9 G.<br>OA-93 Yeni Yıl<br>Combat Machete G.</div>
+          </div>
+        </a>
+      </li>
+    </section>
+  </ul>
+
+  <!--- KART3 --->
+
+  <ul id="kart3" style="display:none;">
+    <section class="cards">
+
+      <li>
+        <a class="card card__gradient">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-KNKtLzBdWC8_L2_ooWcs4GzuHPmp1-5sThoFPVwK2BjNKJWOuyFH-AXhbIeWP5vzpkBOEgPeRGMSbeem-aSy3JVFeYXEaCNO8cB0a47INbN9JVN1cvaW0qoU4S1u4f5XpSx2JhaM-cjj0HqjgWiYDLe5ezdikjGNwxFd2CMh9_OqAOvvPSgIo0H1/s442/AUG_A3_ES.png')"></div>
+          <div class="content">
+            <div class="card__title">AUG A3 ES</div>
+            <div class="card__info">Taaruz Tüfeği</div>
+            <div class="card__snippet ebenin">AUG A3 ES, siyah yüzey üzerine mavi dijital çizgilerle bezenmiş oldukça güçlü bir taarruz tüfeğidir.</div>
+          </div>
+          <div class="rareitem">POPÜLER</div>
+          <button id="modal-btn" style="cursor: pointer;" onclick="openModal(1)">Detaylı Bilgi</button>
+          <div id="my-modal-1" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">×</span>
+              <div class="rare-weapon-info">POPÜLER ÜRÜN</div>
+              <div class="card__gradient">
+                <div class="ortala">
+                  <div class="popupkont">
+                    <div class="image-div">
+                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-KNKtLzBdWC8_L2_ooWcs4GzuHPmp1-5sThoFPVwK2BjNKJWOuyFH-AXhbIeWP5vzpkBOEgPeRGMSbeem-aSy3JVFeYXEaCNO8cB0a47INbN9JVN1cvaW0qoU4S1u4f5XpSx2JhaM-cjj0HqjgWiYDLe5ezdikjGNwxFd2CMh9_OqAOvvPSgIo0H1/s442/AUG_A3_ES.png" alt="Resim" width="442" height="442">
+                    </div>
+                    <div class="text-div">
+                      <div class="subdata">
+                        <h2>AUG A3 ES</h2>
+                        <p class="subtext">Taaruz Tüfeği</p>
+                        <hr>
+                      </div>
+                      <div class="skillbar">
+                        <div class="flex">
+                          <div class="right-align">
+                            <h2>Hasar</h2>
+                          </div>
+                          <div class="bar">
+                            <div style="width: 30%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>30</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Seri Atış</h2>
+                          <div class="bar">
+                            <div style="width: 92%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>92</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Kontrol</h2>
+                          <div class="bar">
+                            <div style="width: 48%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>48</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Hareket Hızı</h2>
+                          <div class="bar">
+                            <div style="width: 85%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>85</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Dikey Tepme</h2>
+                          <div class="bar">
+                            <div style="width: 57%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>57</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Yatay Tepme</h2>
+                          <div class="bar">
+                            <div style="width: 48%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>48</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Mermi Sayısı</h2>
+                          <h3 style="margin-right: 125px;">45/225</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Menzil</h2>
+                          <h3 style="margin-right: 134px;">100</h3>
+                        </div>
+                      </div>
+                      <div class="tamstorebutton" onclick="window.open('https://store.tamgame.com/tr/urun/aug-a3-es', '_blank')">TAM STORE</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </a>
+      </li>
+
+      <li>
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBpjxIq4W_Qc2KyidYQfF5Khivac72Q5xr3KmLThR8LbnxKRjCluLVolSO9wlKjqlLDnPTvcX6F0jm048HFAqVvWdISsnq5Eh3gV7xG_pHHmzsG_o1V4me66v02TctaM-PpnhLu0QX4OyVLzBj709pBEIg8BbQ2AWdLCUpQHxp13UNp54h0GuQ9DqM/s442/Aug_AZ.png')"></div>
+          <div class="content">
+            <div class="card__title">AUG A3 AZE</div>
+            <div class="card__info">Taaruz Tüfeği</div>
+            <div class="card__snippet">AUG A3 AZE, Azerbaycan Bayrak Günü'nü kutlamak için tasarlanmıştır.</div>
+          </div>
+          <button id="modal-btn" style="cursor: pointer;" onclick="openModal(2)">Detaylı Bilgi</button>
+          <div id="my-modal-2" class="modal">
+            <div class="modal-content">
+              <button class="close" onclick="closeModal()" style="background-color: transparent; border: none;">×</button>
+              <div class="modal-body" style="background: url('https://i.ibb.co/ckDBZCN/Improbable-Abandoned-Chihuahua-size-restricted.gif') no-repeat center / cover;">
+                <div class="ortala">
+                  <div class="popupkont">
+                    <div class="image-div">
+                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBpjxIq4W_Qc2KyidYQfF5Khivac72Q5xr3KmLThR8LbnxKRjCluLVolSO9wlKjqlLDnPTvcX6F0jm048HFAqVvWdISsnq5Eh3gV7xG_pHHmzsG_o1V4me66v02TctaM-PpnhLu0QX4OyVLzBj709pBEIg8BbQ2AWdLCUpQHxp13UNp54h0GuQ9DqM/s442/Aug_AZ.png" alt="Resim" width="442" height="442">
+                    </div>
+                    <div class="text-div">
+                      <div class="subdata">
+                        <h2>AUG A3 AZE</h2>
+                        <p class="subtext">Taaruz Tüfeği</p>
+                        <hr>
+                      </div>
+                      <div class="skillbar">
+                        <div class="flex">
+                          <div class="right-align">
+                            <h2>Hasar</h2>
+                          </div>
+                          <div class="bar">
+                            <div style="width: 26%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>26</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Seri Atış</h2>
+                          <div class="bar">
+                            <div style="width: 92%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>92</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Kontrol</h2>
+                          <div class="bar">
+                            <div style="width: 48%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>48</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Hareket Hızı</h2>
+                          <div class="bar">
+                            <div style="width: 84%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>84</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Dikey Tepme</h2>
+                          <div class="bar">
+                            <div style="width: 57%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>57</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Yatay Tepme</h2>
+                          <div class="bar">
+                            <div style="width: 48%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>48</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Mermi Sayısı</h2>
+                          <h3 style="margin-right: 125px;">45/225</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Menzil</h2>
+                          <h3 style="margin-right: 134px;">100</h3>
+                        </div>
+                      </div>
+                      <div class="tamstorebutton" onclick="window.open('https://store.tamgame.com/tr/urun/aug-a3-aze', '_blank')">TAM STORE</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a class="card">
+          <div class="card__image" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjMVaL1GXeEP4zNTts4WcxWSS3mVQNK6uoU6O5lHLprLEfpjt0uBJPHy1N37qHgqqPDxG7GorkGLNH0f8EshN7oqWB6u7d11lQI9vO_Ra1TqGHRRoSdkdw26Cfu21puQVQbjC2BgB3tpb-dy2ujSmJtxGit15Nx-II4g00Scxz_9FSUkP-48h4HDam/s442/Aug_TR.png')"></div>
+          <div class="content">
+            <div class="card__title">AUG A3 Türkiye</div>
+            <div class="card__info">Taaruz Tüfeği</div>
+            <div class="card__snippet">AUG A3 Türkiye, Türk Bayrağı simgesi ve renkleri ile desenlendirilmiştir.</div>
+          </div>
+          <button id="modal-btn" style="cursor: pointer;" onclick="openModal(3)">Detaylı Bilgi</button>
+          <div id="my-modal-3" class="modal">
+            <div class="modal-content">
+              <button class="close" onclick="closeModal()" style="background-color: transparent; border: none;">×</button>
+              <div class="modal-body" style="background: url('https://th.bing.com/th/id/R.1959527fef47e3ce56cae4c4ad11303d?rik=1wVaRyC5ANbfuA&pid=ImgRaw&r=0') no-repeat center / cover;">
+                <div class="ortala">
+                  <div class="popupkont">
+                    <div class="image-div">
+                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjMVaL1GXeEP4zNTts4WcxWSS3mVQNK6uoU6O5lHLprLEfpjt0uBJPHy1N37qHgqqPDxG7GorkGLNH0f8EshN7oqWB6u7d11lQI9vO_Ra1TqGHRRoSdkdw26Cfu21puQVQbjC2BgB3tpb-dy2ujSmJtxGit15Nx-II4g00Scxz_9FSUkP-48h4HDam/s442/Aug_TR.png" alt="Resim" width="442" height="442">
+                    </div>
+                    <div class="text-div">
+                      <div class="subdata">
+                        <h2>AUG A3 Türkiye</h2>
+                        <p class="subtext">Taaruz Tüfeği</p>
+                        <hr>
+                      </div>
+                      <div class="skillbar">
+                        <div class="flex">
+                          <div class="right-align">
+                            <h2>Hasar</h2>
+                          </div>
+                          <div class="bar">
+                            <div style="width: 26%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>26</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Seri Atış</h2>
+                          <div class="bar">
+                            <div style="width: 92%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>92</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Kontrol</h2>
+                          <div class="bar">
+                            <div style="width: 48%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>48</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Hareket Hızı</h2>
+                          <div class="bar">
+                            <div style="width: 84%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>84</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Dikey Tepme</h2>
+                          <div class="bar">
+                            <div style="width: 57%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>57</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Yatay Tepme</h2>
+                          <div class="bar">
+                            <div style="width: 48%; height: 10px; background: white;"></div>
+                          </div>
+                          <h3>48</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Mermi Sayısı</h2>
+                          <h3 style="margin-right: 125px;">45/225</h3>
+                        </div>
+
+                        <div class="flex">
+                          <h2>Menzil</h2>
+                          <h3 style="margin-right: 134px;">100</h3>
+                        </div>
+                      </div>
+                      <div class="tamstorebutton" onclick="window.open('https://store.tamgame.com/tr/urun/aug-a3-türkiye', '_blank')">TAM STORE</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+
+    </section>
+  </ul>
+
+  <div class="konteyner">
+    <div class="cizgi"></div>
+    <div class="icerik">
+      <div class="oyunici">
+        <br><br>
+        <p style="color: grey;">Bu sitenin TAM Game ile bağlantısı yoktur.<br>
+          <font style="font-weight: bold;">Kasım 2020</font> tarihinde oluşturulmuştur.
+        </p>
+      </div>
+      <div class="oyunici">
+        <h1 style="margin-top: 43px; margin-right: 10px;">PB Discord</h1>
+        <p style="color: white;">discord.gg/pointblanktam</p>
+      </div>
     </div>
   </div>
-</div>
+
 </body>
+
 </html>
