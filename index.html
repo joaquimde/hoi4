@@ -162,31 +162,43 @@
     }
 
     .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      height: 100px;
-      padding: 0 50px;
-      background-color: #181818;
-      box-sizing: border-box;
-      border-bottom: 3px solid #353535;
-      color: white;
-    }
-
-    .header p {
-      font-size: medium;
-    }
-
-    .header a {
-      font-size: small;
-      text-decoration: none;
-      color: #7b7b7b;
-    }
-
-    .header a span {
-      animation: rainbow 3s infinite;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 0 50px;
+  background-color: #181818;
+  box-sizing: border-box;
+  border-bottom: 3px solid #353535;
+  color: white;
+}
+.header .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-size: medium;
+}
+.header .information p {
+  margin: 0;
+  padding: 0;
+}
+.header .information a {
+  text-decoration: none;
+}
+.header .information a span {
+  animation: rainbow 3s infinite;
+}
+.header .information .title {
+  text-align: left;
+  font-style: italic;
+}
+.header .information .owner {
+  text-align: left;
+  color: #7b7b7b;
+  font-size: small;
+}
 
     .socialmedia {
       display: flex;
@@ -756,7 +768,14 @@
     }
   </style>
   <div class="header">
-    <p>POINT BLANK INFO<br><a href="https://pb.tamgame.com/ranking/individual/list.do?ranktype=exp&keyword=Joaquim" target="_blank"><span>Joaquim</span> tarafından hazırlanmıştır.</a></p>
+    <div class="information">
+      <div class="title">
+    <p><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiMro34IZHhrATvleB745tH1WTlBBUOL9b8H3Hj4H5HCjRdDfaEZkEwKhTOQTFsfdRDcHDuMYt5p7Mt_BVvnEkSH-m8TPbO8d1zQROTyOBoObavSFXhTMdW5XsgDyII1Kp8QH62uvRIE8gxRlCJ1-eICfCZfDN4oidG7xnJ7y0exgjzySDa5b7ypdcHRs/s140/point_blank.png"/> INFO</p>
+    </div>
+    <div class="owner">
+    <p><a href="https://pb.tamgame.com/ranking/individual/list.do?ranktype=exp&keyword=Joaquim" target="_blank"><span>Joaquim</span></a> tarafından hazırlanmıştır.</p>
+    </div>
+    </div>
     <div class="socialmedia">
       <div style="display: flex; justify-content: space-around; gap: 7px;">
         <a href="https://www.youtube.com/@pointblanktenbilgiler574" target="_blank">
